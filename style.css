@@ -1,0 +1,534 @@
+/* Configurações Gerais de Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    /* Fundo baseado na borda de couro escuro e queimado do mapa */
+    background-color: #1a1108;
+    background-image: linear-gradient(135deg, #24180c 0%, #120904 100%);
+    color: #3b2814; /* Texto principal em marrom escuro */
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.6;
+}
+
+/* Cabeçalho / Banner Principal */
+header {
+    background: linear-gradient(to bottom, #362312, #24180c);
+    border-bottom: 4px solid #b8862d; 
+    padding: 60px 20px;
+    text-align: center;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.8);
+}
+
+.banner-content h1 {
+    font-family: 'Cinzel', serif;
+    font-size: 3.8rem;
+    color: #d19f45; /* Tom ocre/dourado das estradas do mapa */
+    letter-spacing: 5px;
+    text-shadow: 2px 2px 4px #000;
+}
+
+.banner-content p {
+    font-family: 'Cinzel', serif;
+    font-size: 1.2rem;
+    color: #d19f45 !important;
+    margin-top: 5px;
+    letter-spacing: 1px;
+}
+
+/* Menu de Navegação Estilo Abas */
+nav {
+    background-color: #170f07;
+    border-bottom: 2px solid #543d25;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+.nav-btn {
+    background: none;
+    border: none;
+    /* Adicionamos uma borda transparente de 2px para ocupar o lugar antes mesmo do hover */
+    border-bottom: 2px solid transparent; 
+    color: #a88d6f; 
+    font-family: 'Cinzel', serif;
+    font-size: 1.1rem;
+    padding: 16px 25px 14px 25px; /* Ajuste o padding de baixo para compensar a borda */
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.nav-btn:hover, .nav-btn.active {
+    color: #d19f45; 
+    background-color: #24180c;
+    text-shadow: 1px 1px 2px #000;
+    /* Agora a borda já existia, ela apenas ganha cor */
+    border-bottom: 2px solid #d19f45; 
+}
+/* Layout do Container */
+.container {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+/* ---- JANELAS DO MEIO: COR DE AREIA CLARA / PERGAMINHO ---- */
+.card {
+    background-color: #e3d4b6 !important; /* Forçando a cor de areia clara do mapa */
+    border: 2px solid #8a683e; /* Borda cor de couro/madre envelhecida */
+    border-radius: 4px;
+    padding: 35px;
+    box-shadow: 0 12px 30px rgba(0,0,0,0.7);
+    margin-bottom: 30px;
+}
+
+h2 {
+    font-family: 'Cinzel', serif;
+    color: #4a2f11; /* Marrom escuro idêntico aos nomes dos mapas */
+    font-size: 1.9rem;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #bfae8f;
+    padding-bottom: 10px;
+}
+
+h3 {
+    font-family: 'Cinzel', serif;
+    color: #694318;
+    margin: 25px 0 12px 0;
+}
+
+p, li {
+    color: #2b1a08 !important; /* Forçando o texto a ficar marrom escuro bem legível */
+    font-weight: 600; 
+}
+
+/* Controle de Abas Invisíveis */
+.tab-content {
+    display: none;
+}
+
+.tab-content.active {
+    display: block;
+    animation: fadeIn 0.4s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(5px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Álbum / Galeria de Fotos */
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.gallery-item {
+    background-color: #d2c3a3; 
+    border: 2px solid #a18a68;
+    padding: 10px;
+    border-radius: 2px;
+    transition: all 0.2s ease;
+}
+
+.gallery-item:hover {
+    transform: scale(1.02);
+    border-color: #4a2f11;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+.gallery-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border: 1px solid #8a683e;
+}
+
+.gallery-item .desc {
+    font-size: 0.95rem;
+    color: #4a2f11;
+    font-weight: bold;
+    margin-top: 10px;
+    text-align: center;
+}
+
+/* Aba de Guias */
+.guia-box {
+    background-color: #dccbaa;
+    border: 1px solid #bfae8f;
+    border-left: 5px solid #8a683e;
+    padding: 18px;
+    border-radius: 4px;
+}
+
+.guia-box li {
+    color: #2b1a08 !important;
+}
+
+.guia-box strong {
+    color: #694318;
+}
+
+/* Formulário do Aging */
+.aging-form {
+    margin: 25px 0;
+    background-color: #d2c3a3;
+    padding: 25px;
+    border-radius: 3px;
+    border: 1px solid #b5a381;
+}
+
+.input-group label {
+    margin-bottom: 6px;
+    color: #4a2f11;
+    font-weight: bold;
+}
+
+.input-group input, .input-group select {
+    background-color: #e3d4b6;
+    border: 2px solid #a18a68;
+    color: #2b1a08;
+    padding: 11px;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 3px;
+    width: 100%; /* Garante preenchimento correto */
+}
+
+/* Botão de Ação */
+.action-btn {
+    background-color: #8c5827; 
+    color: #fff;
+    font-family: 'Cinzel', serif;
+    font-weight: bold;
+    font-size: 1.1rem;
+    border: 1px solid #573413;
+    padding: 14px 20px;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 3px;
+    transition: background 0.2s;
+    text-shadow: 1px 1px 2px #000;
+}
+
+.action-btn:hover {
+    background-color: #70431b;
+}
+
+/* Caixa de Resultado */
+.resultado-box {
+    margin-top: 25px;
+    background-color: #decfa8;
+    border: 2px dashed #8a683e;
+    padding: 22px;
+    border-radius: 3px;
+}
+
+/* Rodapé */
+footer {
+    text-align: center;
+    padding: 35px 20px;
+    color: #8c7358;
+    font-size: 0.85rem;
+    background-color: #120904;
+    border-top: 2px solid #24180c;
+    margin-top: 60px;
+}
+
+/* ---- INTEGRALIZAÇÃO DA BANDEIRA / TAG DO CLÃ ---- */
+.banner-flag {
+    height: 64px; 
+    width: auto;
+    margin-bottom: 15px;
+    filter: drop-shadow(0px 4px 8px rgba(0, 0, 0, 0.7));
+    animation: pulseFlag 3s infinite ease-in-out;
+}
+
+.nav-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    width: 100%;
+}
+
+.nav-clan-identity {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.mini-flag {
+    height: 24px; 
+    width: auto;
+    filter: drop-shadow(0px 2px 4px rgba(0,0,0,0.5));
+}
+
+.clan-name-tag {
+    font-family: 'Cinzel', serif;
+    color: #d19f45;
+    font-weight: bold;
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+}
+
+@keyframes pulseFlag {
+    0% { 
+        transform: scale(1); 
+        filter: drop-shadow(0px 4px 8px rgba(0, 0, 0, 0.8)) 
+                drop-shadow(0px 0px 0px rgba(209, 159, 69, 0)); 
+    }
+    50% { 
+        transform: scale(1.06); 
+        filter: drop-shadow(0px 4px 12px rgba(0, 0, 0, 0.9)) 
+                drop-shadow(0px 0px 15px rgba(209, 159, 69, 0.7)); 
+    }
+    100% { 
+        transform: scale(1); 
+        filter: drop-shadow(0px 4px 8px rgba(0, 0, 0, 0.8)) 
+                drop-shadow(0px 0px 0px rgba(209, 159, 69, 0)); 
+    }
+}
+
+/* =========================================================================
+   SISTEMA DE MEDIA QUERIES - CONVERSÃO PARA DISPOSITIVO MÓVEL (NOVO)
+   ========================================================================= */
+@media (max-width: 768px) {
+    .banner-content h1 {
+        font-size: 2.2rem; /* Reduz tamanho do título do clã para caber na tela */
+        letter-spacing: 2px;
+    }
+
+    .banner-content p {
+        font-size: 1rem;
+    }
+
+    header {
+        padding: 35px 10px;
+    }
+
+<div class="nav-container">
+    <button class="menu-toggle" onclick="toggleMenu()">☰ Menu</button>
+    <ul id="menu-lista">
+        <li><button class="nav-btn active" onclick="openTab('home')">Início</button></li>
+        </ul>
+</div>
+   
+
+ /* Transforma o menu horizontal em blocos verticais */
+    .nav-container {
+        flex-direction: column;
+        gap: 15px;
+        padding: 15px 10px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        width: 100%;
+        gap: 5px;
+    }
+
+    nav ul li {
+        width: 100%;
+    }
+
+    .nav-btn {
+        width: 100%;
+        text-align: center;
+        padding: 14px 10px;
+        background-color: #24180c;
+        border: 1px solid #543d25;
+        border-radius: 3px;
+    }
+
+    .nav-btn.active {
+        border-bottom: 2px solid #d19f45;
+        background-color: #362312;
+    }
+
+    /* Ajusta os cards e margens gerais */
+    .container {
+        margin: 15px auto;
+        padding: 0 10px;
+    }
+
+    .card {
+        padding: 20px 15px;
+    }
+
+    /* Força o empilhamento dos inputs de Dano Mínimo e Máximo que quebravam lado a lado */
+    #container-inputs-arma div[style*="display: flex"] {
+        flex-direction: column !important;
+        gap: 0 !important;
+    }
+
+    #container-inputs-arma div[style*="flex: 1"] {
+        margin-bottom: 15px;
+        width: 100%;
+    }
+
+    /* Blindagem de tabelas de Guia e Drops para gerar scroll horizontal e não esmagar */
+    table {
+        display: block;
+        width: 100%;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        white-space: nowrap;
+    }
+
+    /* Reduz galeria de prints para 1 coluna */
+    .gallery-grid {
+        grid-template-columns: 1fr !important;
+    }
+}
+
+
+#lista-missoes {
+    /* Em vez de min-height fixo que pode cortar ou sobrar muito, 
+       usamos uma abordagem que mantém o fluxo sem tremer */
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    /* Garante que o container não mude de tamanho drasticamente */
+    min-height: 50vh; 
+}
+
+
+
+.filtros {
+    margin: 20px 0;
+    text-align: center;
+}
+.filtros button {
+    padding: 10px 15px;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+
+
+
+
+/* --- Correção do Menu Mobile --- */
+
+/* 1. Esconder o botão no desktop */
+@media (min-width: 769px) {
+    .menu-toggle {
+        display: none !important;
+    }
+    #menu-lista {
+        display: flex !important; /* Garante que aparece no PC */
+        flex-direction: row !important;
+    }
+}
+
+/* 2. Ajustes para telas pequenas (Celulares) */
+@media (max-width: 768px) {
+    .nav-container {
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .menu-toggle {
+        display: block !important;
+        width: 100%;
+        background: #362312;
+        color: #d19f45;
+        border: none;
+        padding: 15px;
+        font-family: 'Cinzel', serif;
+        cursor: pointer;
+    }
+
+    #menu-lista {
+        display: none; /* Escondido por padrão no mobile */
+        flex-direction: column;
+        width: 100%;
+        background: #24180c;
+        position: absolute; /* Para ficar sobre o conteúdo */
+        top: 100%;
+        left: 0;
+        z-index: 1000;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+    }
+
+    #menu-lista.active {
+        display: flex !important; /* Mostra ao clicar */
+    }
+
+    .nav-btn {
+        width: 100%;
+        text-align: left;
+        border-bottom: 1px solid #543d25;
+    }
+    
+    /* Oculta a logo do clã no menu mobile para economizar espaço */
+    .nav-clan-identity {
+        display: none;
+    }
+}
+
+
+.cta-container {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 25px;
+}
+
+.cta-container a {
+    padding: 12px 25px;
+    text-decoration: none;
+    font-family: 'Cinzel', serif;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: 0.3s;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+/* Botão Discord */
+.btn-discord {
+    background-color: #5865F2;
+    color: white;
+}
+
+.btn-discord:hover {
+    background-color: #4752c4;
+}
+
+/* Botão WhatsApp */
+.btn-whatsapp {
+    background-color: #25D366;
+    color: white;
+}
+
+.btn-whatsapp:hover {
+    background-color: #128C7E;
+}
+
+
+
+
+
+
+
+
+
+
+
