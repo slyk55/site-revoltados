@@ -628,3 +628,11 @@ document.querySelectorAll('#menu-lista li button').forEach(button => {
         document.getElementById('menu-lista').classList.remove('active');
     });
 });
+
+
+
+
+// Adicione isso se quiser um atalho para abrir downloads via JS
+function abrirDownloads() {
+    openTab('downloads');
+}
