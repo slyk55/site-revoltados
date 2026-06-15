@@ -74,6 +74,8 @@ const DATA_ITEMS_METAGAME = {
         // --- DEFESAS CADASTRADAS ---
         { id: "arm_minotauro", nome: "🛡️ [80A] Armadura Minotauro", grade: "80a", defBase: 310, absorcao: 12.7 },
 
+    { id: "arm_noel", nome: "🛡️ [20] Armadura Noel OrigensPT", grade: "20", defBase: 220, absorcao: 10 },
+    { id: "roupao_noel", nome: "🧙 [20] Roupão Noel OrigensPT", grade: "20", defBase: 220, absorcao: 10 },
     { id: "arm_demoniaca", nome: "🛡️ [80B] Armadura Demoníaca", grade: "80b", defBase: 330, absorcao: 14.2 },
 
     { id: "arm_salamandra", nome: "🛡️ [80C] Armadura Salamandra", grade: "80c", defBase: 360, absorcao: 16.2 },
@@ -194,6 +196,7 @@ function popularItensEspecificos() {
         const itensOrdenados = [...DATA_ITEMS_METAGAME[tipoItem]].sort((a, b) => {
 
     const ordemGrade = {
+        "20": 20,
         "75": 75,
         "80a": 801,
         "80b": 802,
