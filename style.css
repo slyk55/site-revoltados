@@ -596,6 +596,14 @@ footer {
     transition: all 0.5s ease; 
     display: flex;
     flex-direction: column;
+    height: 100%;
+}
+
+.download-info {
+    padding: 20px;
+    display: flex; /* Define o container interno como flex */
+    flex-direction: column;
+    flex-grow: 1; /* Faz o container crescer para preencher o espaço */
 }
 
 .download-card img {
@@ -626,7 +634,7 @@ footer {
     /* Cor do texto em tom ocre/dourado */
     color: #d19f45; 
     padding: 10px;
-    margin-top: 15px;
+    margin-top: auto;
     text-decoration: none;
     font-weight: bold;
     font-family: 'Cinzel', serif;
