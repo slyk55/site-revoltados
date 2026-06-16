@@ -87,6 +87,34 @@ const DATA_ITEMS_METAGAME = {
     { id: "roupao_alquimista", nome: "🧙 [80B] Roupão Alquimista", grade: "80b", defBase: 270, absorcao: 12.6 },
 
     { id: "roupao_astral", nome: "🧙 [80C] Roupão Astral", grade: "80c", defBase: 290, absorcao: 14.4 },
+{ id: "arm_cealum_khan", nome: "🛡️ [90] Armadura Cealum Khan", grade: "90", defBase: 400, absorcao: 19.0 },
+{ id: "arm_fenix", nome: "🛡️ [100] Armadura Fênix", grade: "100", defBase: 430, absorcao: 23.8 },
+{ id: "arm_ira_khan", nome: "🛡️ [100] Armadura Ira Khan", grade: "100", defBase: 420, absorcao: 23.5 },
+{ id: "arm_frenesi", nome: "🛡️ [102] Armadura Frenesi", grade: "102", defBase: 460, absorcao: 26.5 },
+{ id: "arm_magica", nome: "🛡️ [103] Armadura Mágica", grade: "103", defBase: 490, absorcao: 29.4 },
+{ id: "arm_highlander", nome: "🛡️ [105] Armadura Highlander", grade: "105", defBase: 490, absorcao: 29.4 },
+{ id: "arm_vir_khan", nome: "🛡️ [105] Armadura Vir Khan", grade: "105", defBase: 480, absorcao: 29.3 },
+{ id: "arm_cronus", nome: "🛡️ [108] Armadura Cronus", grade: "108", defBase: 520, absorcao: 32.1 },
+{ id: "arm_mitologica", nome: "🛡️ [118] Armadura Mitológica", grade: "118", defBase: 550, absorcao: 34.8 },
+{ id: "arm_mortal", nome: "🛡️ [123] Armadura Mortal", grade: "123", defBase: 680, absorcao: 37.5 },
+{ id: "arm_flamejante", nome: "🛡️ [130] Armadura Flamejante", grade: "130", defBase: 1070, absorcao: 40.2 },
+{ id: "arm_verus", nome: "🛡️ [140] Armadura Verus", grade: "140", defBase: 1460, absorcao: 42.9 },
+{ id: "arm_abissal", nome: "🛡️ [165] Armadura Abissal", grade: "165", defBase: 1850, absorcao: 45.6 },
+{ id: "arm_verthex", nome: "🛡️ [172] Armadura Verthex", grade: "172", defBase: 2250, absorcao: 55.6 },
+{ id: "roupao_cealum_khan", nome: "🧙 [90] Roupão Cealum Khan", grade: "90", defBase: 330, absorcao: 17.0 },
+{ id: "roupao_ruah", nome: "🧙 [100] Roupão Ruah", grade: "100", defBase: 350, absorcao: 21.1 },
+{ id: "roupao_ira_khan", nome: "🧙 [100] Roupão Ira Khan", grade: "100", defBase: 340, absorcao: 21.0 },
+{ id: "roupao_eterno", nome: "🧙 [102] Roupão Eterno", grade: "102", defBase: 370, absorcao: 23.4 },
+{ id: "roupao_magico", nome: "🧙 [103] Roupão Mágico", grade: "103", defBase: 390, absorcao: 24.6 },
+{ id: "roupao_arcanjo", nome: "🧙 [105] Roupão Arcanjo", grade: "105", defBase: 390, absorcao: 24.6 },
+{ id: "roupao_freya", nome: "🧙 [108] Roupão Freya", grade: "108", defBase: 410, absorcao: 26.8 },
+{ id: "roupao_vir_khan", nome: "🧙 [105] Roupão Vir Khan", grade: "105", defBase: 380, absorcao: 24.5 },
+{ id: "roupao_mitologico", nome: "🧙 [118] Roupão Mitológico", grade: "118", defBase: 440, absorcao: 29.0 },
+{ id: "roupao_mortal", nome: "🧙 [123] Roupão Mortal", grade: "123", defBase: 570, absorcao: 31.2 },
+{ id: "roupao_flamejante", nome: "🧙 [130] Roupão Flamejante", grade: "130", defBase: 960, absorcao: 33.5 },
+{ id: "roupao_verus", nome: "🧙 [140] Roupão Verus", grade: "140", defBase: 1350, absorcao: 35.7 },
+{ id: "roupao_abissal", nome: "🧙 [165] Roupão Abissal", grade: "165", defBase: 1740, absorcao: 37.9 },
+{ id: "roupao_verthex", nome: "🧙 [172] Roupão Verthex", grade: "172", defBase: 2140, absorcao: 47.9 },
 
     { id: "roupao_archon", nome: "🧙 [80D] Roupão Archon", grade: "80d", defBase: 310, absorcao: 16.5 }
 ],
@@ -115,6 +143,19 @@ const DATA_ITEMS_METAGAME = {
         absorcao: 8.4,
         bloqueio: 20
     },
+{ id: "esc_chama", nome: "🛡️ [37] Escudo Chama", grade: "37", defBase: 84, absorcao: 3.3, bloqueio: 19 },
+{ id: "esc_grande", nome: "🛡️ [55] Escudo Grande", grade: "55", defBase: 95, absorcao: 4.3, bloqueio: 20 },
+{ id: "esc_dragao", nome: "🛡️ [80e] Escudo Dragão", grade: "80e", defBase: 200, absorcao: 10.4, bloqueio: 20 },
+{ id: "esc_fenix", nome: "🛡️ [100] Escudo Fênix", grade: "100", defBase: 218, absorcao: 11.5, bloqueio: 20 },
+{ id: "esc_morte", nome: "🛡️ [102] Escudo da Morte", grade: "102", defBase: 230, absorcao: 12.5, bloqueio: 20 },
+{ id: "esc_inferno", nome: "🛡️ [105] Escudo Inferno", grade: "105", defBase: 242, absorcao: 13.5, bloqueio: 20 },
+{ id: "esc_cronus", nome: "🛡️ [108] Escudo Cronus", grade: "108", defBase: 254, absorcao: 14.5, bloqueio: 21 },
+{ id: "esc_mitologico", nome: "🛡️ [118] Escudo Mitológico", grade: "118", defBase: 266, absorcao: 15.5, bloqueio: 22 },
+{ id: "esc_mortal", nome: "🛡️ [123] Escudo Mortal", grade: "123", defBase: 278, absorcao: 16.5, bloqueio: 23 },
+{ id: "esc_flamejante", nome: "🛡️ [130] Escudo Flamejante", grade: "130", defBase: 290, absorcao: 17.5, bloqueio: 24 },
+{ id: "esc_verus", nome: "🛡️ [140] Escudo Verus", grade: "140", defBase: 302, absorcao: 18.5, bloqueio: 25 },
+{ id: "esc_abissal", nome: "🛡️ [165] Escudo Abissal", grade: "165", defBase: 314, absorcao: 19.5, bloqueio: 26 },
+{ id: "esc_verthex", nome: "🛡️ [172] Escudo Verthex", grade: "172", defBase: 326, absorcao: 20.5, bloqueio: 27 },
     {
         id: "esc_vampiro",
         nome: "🛡️ [80D] Escudo Vampiro",
@@ -195,21 +236,29 @@ function popularItensEspecificos() {
     if (DATA_ITEMS_METAGAME[tipoItem]) {
         const itensOrdenados = [...DATA_ITEMS_METAGAME[tipoItem]].sort((a, b) => {
 
-    const ordemGrade = {
-        "20": 20,
-        "75": 75,
-        "80a": 801,
-        "80b": 802,
-        "80c": 803,
-        "80d": 804,
-        "90": 90,
-        "100": 100,
-        "108": 108,
-        "118": 118,
-        "123": 123,
-        "130": 130,
-        "140": 140
-    };
+const ordemGrade = {
+    "20": 20,
+    "37": 37,
+    "55": 55,
+    "75": 75,
+    "80a": 80.1,
+    "80b": 80.2,
+    "80c": 80.3,
+    "80d": 80.4,
+    "80e": 80.5,
+    "90": 90,
+    "100": 100,
+    "102": 102,
+    "103": 103,
+    "105": 105,
+    "108": 108,
+    "118": 118,
+    "123": 123,
+    "130": 130,
+    "140": 140,
+    "165": 165,
+    "172": 172
+};
 
     return (ordemGrade[a.grade] || 9999) -
            (ordemGrade[b.grade] || 9999);
