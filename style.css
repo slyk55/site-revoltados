@@ -127,6 +127,8 @@ p, li {
     to { opacity: 1; transform: translateY(0); }
 }
 
+
+
 /* Álbum / Galeria de Fotos */
 .gallery-grid {
     display: grid;
@@ -136,24 +138,30 @@ p, li {
 }
 
 .gallery-item {
-    background-color: #d2c3a3; 
-    border: 2px solid #a18a68;
+    background-color: #d2c3a3;
+    border: 2px solid #8a683e;
     padding: 10px;
-    border-radius: 2px;
-    transition: all 0.2s ease;
+    border-radius: 4px;
+    /* Isso garante a suavidade ao abrir/fechar e ao mover */
+    transition: all 0.5s ease; 
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
 }
 
 .gallery-item:hover {
-    transform: scale(1.02);
-    border-color: #4a2f11;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    border-color: #d19f45;
+    /* O efeito de "salto" suave */
+    transform: translateY(-2px); 
+    box-shadow: 0 10px 20px rgba(0,0,0,0.3);
 }
 
 .gallery-item img {
     width: 100%;
-    height: auto;
-    display: block;
-    border: 1px solid #8a683e;
+    height: 220px; /* Fixa altura da imagem */
+    object-fit: cover; /* Corta para preencher sem distorcer */
+    cursor: pointer;
+    transition: transform 0.3s;
 }
 
 .gallery-item .desc {
@@ -172,6 +180,18 @@ p, li {
     padding: 18px;
     border-radius: 4px;
 }
+/* Altera apenas a cor das letras dos botões que estão dentro da div .filter-buttons */
+.filter-buttons .nav-btn {
+    color: #4a2f11 !important; /* Marrom escuro desejado */
+}
+
+/* Opcional: Garante que o texto mude de cor ao passar o mouse, mantendo legibilidade */
+.filter-buttons .nav-btn:hover {
+    color: #fff !important; 
+}
+
+
+
 
 .guia-box li {
     color: #2b1a08 !important;
@@ -568,6 +588,7 @@ footer {
 /* Garante que o card de download cresça para preencher as colunas */
 .download-card {
     background: rgba(20, 20, 20, 0.8);
+    background-color: #d2c3a3 !important;
     border: 1px solid #444;
     border-radius: 8px;
     overflow: hidden;
@@ -593,19 +614,31 @@ footer {
 .download-img img { width: 100%; height: 100%; object-fit: cover; }
 
 .download-info { padding: 20px; flex-grow: 1; }
+.download-info h3, .download-info p {
+    color: #2b1a08 !important; /* Marrom escuro para manter o padrão */
+}
 
 .download-link {
     display: block;
     text-align: center;
-    border: 1px solid #d19f45;
-    color: #d19f45;
+    /* Fundo marrom escuro (baseado no tema geral) */
+    background-color: #4a2f11; 
+    /* Cor do texto em tom ocre/dourado */
+    color: #d19f45; 
     padding: 10px;
     margin-top: 15px;
     text-decoration: none;
     font-weight: bold;
     font-family: 'Cinzel', serif;
+    border: 1px solid #d19f45;
+    transition: all 0.3s ease;
 }
-.download-link:hover { background: #d19f45; color: #000; }
+.download-link:hover {
+    /* Inverte: fundo dourado e texto escuro */
+    background-color: #d19f45;
+    color: #2b1a08;
+    border-color: #4a2f11;
+}
 
 
 
@@ -619,3 +652,5 @@ footer {
     border-bottom: 1px solid #bfae8f;
     padding: 15px 0;
 }
+
+

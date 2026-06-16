@@ -639,3 +639,22 @@ document.querySelectorAll('#menu-lista li button').forEach(button => {
 function abrirDownloads() {
     openTab('downloads');
 }
+
+document.addEventListener('DOMContentLoaded', () => {
+    const modal = document.getElementById('modal-foto');
+    const imgModal = document.getElementById('img-modal');
+    const fotosAlbum = document.querySelectorAll('.gallery-item img');
+
+    fotosAlbum.forEach(img => {
+        img.addEventListener('click', () => {
+            modal.style.display = 'flex';
+            imgModal.src = img.src;
+        });
+    });
+
+    modal.addEventListener('click', (e) => {
+        if (e.target !== imgModal) {
+            modal.style.display = 'none';
+        }
+    });
+});
