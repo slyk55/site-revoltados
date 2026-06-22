@@ -85,12 +85,35 @@ nav ul {
 /* ---- JANELAS DO MEIO: COR DE AREIA CLARA / PERGAMINHO ---- */
 .card {
     background-color: #e3d4b6 !important; /* Forçando a cor de areia clara do mapa */
+position: relative;
     border: 2px solid #8a683e; /* Borda cor de couro/madre envelhecida */
     border-radius: 4px;
     padding: 35px;
     box-shadow: 0 12px 30px rgba(0,0,0,0.7);
     margin-bottom: 30px;
 }
+
+.ornamento-canto {
+    position: absolute;
+    width: 50px; 
+    height: 50px;
+    z-index: 10;
+    pointer-events: none;
+    
+    /* Substitua pelo nome exato do seu arquivo */
+    background-image: url('images/seu-ornamento.png'); 
+    
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    /* SEM gradientes, sem bolinhas */
+}
+
+/* Posicionamento dos cantos */
+.canto-tl { top: -15px; left: -15px; transform: rotate(180deg); }
+.canto-tr { top: -15px; right: -15px; transform: rotate(270deg); }
+.canto-br { bottom: -15px; right: -15px; }
+.canto-bl { bottom: -15px; left: -15px; transform: rotate(90deg); }
 
 h2 {
     font-family: 'Cinzel', serif;
@@ -662,3 +685,15 @@ footer {
 }
 
 
+
+/* Isso vai escurecer o player do SoundCloud mantendo as cores dele */
+footer iframe {
+    filter: invert(0.9) hue-rotate(180deg) brightness(1.2);
+}
+/* Remove a borda padrão do player e ajusta o fundo */
+footer iframe {
+    border: none !important;
+    background-color: #120904 !important; /* Cor igual à do seu footer */
+    border-radius: 8px;
+
+}

@@ -707,3 +707,33 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 });
+
+
+document.addEventListener('DOMContentLoaded', () => {
+    const cards = document.querySelectorAll('.card');
+    
+    cards.forEach(card => {
+        // Cria os 4 cantos
+        const corners = ['tl', 'tr', 'br', 'bl'];
+        corners.forEach(pos => {
+            const div = document.createElement('div');
+            div.className = `ornamento-canto canto-${pos}`;
+            card.appendChild(div);
+        });
+    });
+});
+
+
+
+// entrada
+function entrarNoSite() {
+    // 1. Esconde a capa
+    const overlay = document.getElementById('entrada-overlay');
+    overlay.style.display = 'none';
+
+    // 2. Opcional: Tenta iniciar o player do SoundCloud
+    // Nota: O SoundCloud exige que o iframe esteja na página. 
+    // Como seu player está na aba 'radio', ele só iniciará se o iframe carregar.
+    // Você pode forçar o autoplay aqui se o player já estiver carregado.
+    console.log("Bem-vindo ao Clã!");
+}
