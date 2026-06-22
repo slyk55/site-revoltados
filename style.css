@@ -686,14 +686,26 @@ footer {
 
 
 
-/* Isso vai escurecer o player do SoundCloud mantendo as cores dele */
+/* Estilização definitiva do Player SoundCloud */
 footer iframe {
     filter: invert(0.9) hue-rotate(180deg) brightness(1.2);
-}
-/* Remove a borda padrão do player e ajusta o fundo */
-footer iframe {
     border: none !important;
-    background-color: #120904 !important; /* Cor igual à do seu footer */
+    background-color: #120904 !important;
     border-radius: 8px;
+    margin-top: 10px;
+}
 
+
+/* Força todos os campos de formulário a terem o mesmo tamanho e fonte */
+.aging-form input, 
+.aging-form select {
+    font-size: 1rem !important;
+    font-family: 'Open Sans', sans-serif !important;
+    font-weight: 600 !important;
+    color: #2b1a08 !important;
+}
+
+/* Isso garante que os campos lado a lado do Dano tenham o mesmo tamanho */
+#container-inputs-arma .input-group input {
+    font-size: 1rem !important;
 }
