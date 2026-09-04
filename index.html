@@ -1,0 +1,1481 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clã RevoltadoS - Priston Tale</title>
+    
+    <link rel="icon" type="image/png" href="images/revoltadostag.png">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <meta property="og:title" content="Clã RevoltadoS - Priston Tale | Dinas PT">
+    <meta property="og:description" content="O refúgio dos guerreiros de Priston Tale. Guias, simuladores de Aging e camaradagem no servidor Dinas PT.">
+    <meta property="og:image" content="https://slyk55.github.io/site-revoltados/images/banner-og2.png">
+    <meta property="og:url" content="https://slyk55.github.io/site-revoltados/">
+    <meta property="og:type" content="website">
+    <meta name="theme-color" content="#d19f45">
+</head>
+
+
+
+<body>
+<div id="entrada-overlay" style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: #120904; z-index: 9999; display: flex; justify-content: center; align-items: center; flex-direction: column;">
+    
+    <h1 style="color: #d19f45 !important; font-family: 'Cinzel', serif; margin-bottom: 10px;">
+        REVOLTADOS CLAN
+    </h1>
+    
+    <p style="color: #d19f45 !important; font-family: 'Cinzel', serif; font-size: 1.5rem; margin-bottom: 30px; letter-spacing: 2px; font-weight: bold;">
+        BEM-VINDOS
+    </p>
+    
+    <button onclick="entrarNoSite()" style="padding: 15px 40px; background: #8c5827; border: 2px solid #d19f45; color: #fff; font-family: 'Cinzel', serif; font-size: 1.2rem; cursor: pointer; border-radius: 5px;">
+        ENTRAR NO SITE
+    </button>
+    
+</div>
+    <header>
+        <div class="banner-content">
+            <img src="images/revoltados.png" alt="Bandeira RevoltadoS" class="banner-flag">
+            <h1>REVOLTADOS</h1>
+            <p>Clã Oficial - Priston Tale</p>
+        </div>
+    </header>
+
+    <nav>
+    <div class="nav-container">
+        <button class="menu-toggle" onclick="toggleMenu()">☰ Menu</button>
+        
+        <div class="nav-clan-identity">
+            <img src="images/revoltados.png" alt="Tag RevoltadoS" class="mini-flag">
+            <span class="clan-name-tag">RevoltadoS</span>
+        </div>
+        
+        <ul id="menu-lista">
+            <li><button class="nav-btn" onclick="openTab('home')">🏠 Início</button></li>
+            <li><button class="nav-btn" onclick="openTab('album')">📸 Álbum </button></li>
+            <li><button class="nav-btn" onclick="openTab('guias')">🔮 Guias </button></li>
+            <li><button class="nav-btn" onclick="openTab('mapas')">🗺️ Mapas </button></li>
+            <li><button class="nav-btn" onclick="openTab('missoes')">📜 Missões </button></li>
+            <li><button class="nav-btn" onclick="openTab('downloads')"> 📥Links</button></li>
+            <li><button class="nav-btn" onclick="openTab('aging')">⚒️ Age Calc</button></li>
+        </ul>
+    </div>
+</nav>
+
+    <main class="container">
+
+        <section id="home" class="tab-content active">
+            <div class="card">
+                <h2>A Doutrina RevoltadoS</h2>
+                <p style="font-style: italic; margin-bottom: 20px; border-left: 3px solid #8a683e; padding-left: 15px; font-size: 1.1rem;">
+                    "Um jogo deixa de ser um prazer no momento em que a toxicidade dita as regras."
+                </p>
+                <p>O nome <strong>RevoltadoS</strong> não é apenas uma tag; é um manifesto contra a opressão dentro do continente. Nossa jornada começou em 2021, sob os céus do servidor Radix. Naquela era, o cenário era sufocado por dois clãs dominantes que espalhavam um ambiente hostil, banindo das áreas de disputa qualquer guerreiro que não compartilhasse de sua soberba no PvP.</p>
+                
+                <p style="margin-top: 15px;">Em resposta a essa tirania, unimos forças entre os jogadores que buscavam the verdadeiro propósito do Priston Tale: a evolução justa, a caçada em equipe (PvE) e a lealdade. Erguemos a bandeira dos <strong>RevoltadoS</strong> para ser um refúgio seguro, onde a diversão e a paz de espírito caminham lado a lado.</p>
+                
+                <p style="margin-top: 15px;">Nossa filosofia de conduta é inegociável:</p>
+                <ul style="list-style-type: square; margin-left: 25px; margin-top: 10px; font-weight: 600;">
+                    <li><strong>Se houver contingente:</strong> Nós marchamos para dominar e conquistar o nosso espaço.</li>
+                    <li><strong>Se o momento pedir cautela:</strong> Forjamos alianças estratégicas com honra.</li>
+                    <li><strong>A nossa linha vermelha:</strong> Não toleramos arrogância alheia e jamais perturbamos a paz de quem joga quieto.</li>
+                </ul>
+
+                <h3 style="margin-top: 30px;">A Nova Era: Do Simple ao Origens PT</h3>
+                <p>Após um período de recolhimento, o chamado das armas ecoou novamente. Despertamos no <strong>Simple PT</strong> em março de 2026, refinando nossas táticas, e desde junho de 2026 fincamos nossas raízes de forma definitiva no <strong>Royal PT</strong>, onde dominamos o server.</p>
+
+<h3 style="margin-top: 30px;">Do Origens ao Royal PT</h3>
+                <p>Nossa estadia no Royal PT foi curta, apenas duas semanas, infelizmente não nos adaptamos ao servidor, mas deixamos nossa marca.</p>
+                
+<h3 style="margin-top: 30px;">Do Royal ao Dinas PT</h3>
+                <p>Estamos aguardando o lançamento do DinasTale e brincando um PvP no FirePK</p>
+
+                <h3 style="margin-top: 25px;">Aliste-se nas Fileiras</h3>
+<p>
+    Se você está cansado do ego inflado dos servidores e busca um clã estruturado na camaradagem, seu lugar é aqui. Seja para o UP diário, quests ou suporte mútuo, a família está de portas abertas.
+</p>
+<p><strong>Procure uma de nossas lideranças in-game:</strong></p>
+<ul style="list-style-type: none; padding-left: 0;">
+    <li>⚔️ <strong>General Bruxo</strong></li>
+    <li>⚔️ <strong>Coronel Languard</strong></li>
+    <li>⚔️ <strong>Sargento Dodo</strong></li>
+    <li>⚔️ <strong>Sargento IsacNewton</strong></li>
+</ul>
+<p>
+    Alternativamente, entre em contato via <strong>WhatsApp</strong> ou junte-se ao nosso <strong>Discord oficial</strong> para oficializar seu alistamento!
+</p>
+
+<div class="cta-container">
+    <a href="https://discord.gg/arDTbG72Kh" class="btn-discord" target="_blank">
+        <i class="fab fa-discord"></i> Entrar no Discord
+    </a>
+    <a href="https://wa.me/+5547988686874" class="btn-whatsapp" target="_blank">
+        <i class="fab fa-whatsapp"></i> Falar no WhatsApp
+    </a>
+</div>
+<section id="radio" class="tab-content">
+    <div class="card">
+        <h2>📻 Rádio RevoltadoS</h2>
+        <p>A trilha sonora das nossas batalhas no servidor.</p>
+        
+        <div style="margin-top: 20px;">
+            <iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay; encrypted-media" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/soundcloud%253Atracks%253A263386208&color=%23d19f45&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
+            
+            <div style="font-size: 10px; color: #cccccc; margin-top: 10px; font-family: sans-serif;">
+                <a href="https://soundcloud.com/andreea-edvina-gheorghe" target="_blank" style="color: #d19f45; text-decoration: none;">Andreea Edvina Gheorghe</a> · 
+                <a href="https://soundcloud.com/andreea-edvina-gheorghe/gabe-connect-live" target="_blank" style="color: #d19f45; text-decoration: none;">Gabe - Connect Live</a>
+            </div>
+        </div>
+    </div>
+</section>
+            </div>
+
+
+        </section>
+
+        <section id="album" class="tab-content">
+            <div class="card">
+                <h2>Álbum de Fotos do Clã</h2>
+                <p>Momentos marcantes da nossa jornada pelo continente.</p>
+                <div class="gallery-grid">
+                    <div class="gallery-item">
+                        <img src="https://pristontaleblog.files.wordpress.com/2013/02/priston-tale-12-drzmc3co4h-1024x768.jpg" alt="Print do Clã 1">
+                        <div class="desc">Print do Clã - Entrada de Navisko</div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="images/boss.jpg" alt="Print do Clã 2">
+                        <div class="desc">Caçada de Boss em Ice1 14/06/26</div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="images/print-up.jpg" alt="Print do Clã 3">
+                        <div class="desc">UP CLAN 15/06/26</div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="images/sod.png" alt="Print do Clã 3">
+                        <div class="desc">SOD Clan 16/06/26</div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="images/pvp.png" alt="Print do Clã 3">
+                        <div class="desc">PVP ice1 16/06/26</div>
+                    </div>
+		    <div class="gallery-item">
+                        <img src="images/pvp2.png" alt="Print do Clã 3">
+                        <div class="desc">PVP iron2 29/06/26</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+        <section id="guias" class="tab-content">
+            <div class="card">
+                <h2>Manuais e Diretrizes de Evolução no Servidor que Estamos Dinas Tale</h2>
+                
+                <div class="guia-box">
+                    <h3>🔮 Estratégia Inicial & Mecânicas de Grupo</h3>
+                    <p style="margin-top: 10px;">Para otimizar sua jornada no continente, confira os pilares fundamentais de progressão adotados pelo clã:</p>
+                    <ul style="list-style-type: square; margin-left: 25px; margin-top: 10px; font-weight: 600;">
+                        <li><strong>Suporte de Carga (Mago Auxiliar):</strong> É altamente recomendável iniciar sua jornada criando um Mago secundário. Suas habilidades em área e buffs serão cruciais para acelerar o UP e dar suporte aos seus personagens principais.</li>
+ <li><strong>Cristais:</strong> Cristais na loja time de Ricartem para acelerar sua evolução.</li>
+                        <li><strong>Multiplicador de Experiência (Party Full):</strong> No ecossistema do Priston Tale, a cooperação dita o ritmo do jogo. Quanto maior o seu grupo, maior será o bônus de XP adquirido. Sempre priorize caçadas em grupos cheios (Party Full) para maximizar o rendimento por hora.</li>
+                        <li><strong>Abastecimento e Equipamentos:</strong> Para facilitar a sua progressão e garantir que você não fique sem equipamentos adequados, o drop do servidor é balanceado para que você drope o necessário para progredir nos níveis <strong>1X, 2X, 3X, 4X, 5X, 6X, 7X, 8X, 9X</strong>. 02:12 29/06/2026</li>
+                        <li><strong>Redistribuição de Atributos (Respec):</strong> As pedras de respec para redefinir os status de itens até o <strong>nível 79</strong> estão disponíveis diretamente no jogo. Você pode adquiri-las no NPC <strong>Ajudante do Moriph</strong>, que fica localizado logo ao lado do Moriph.</li>
+                        <li><strong>Evolução de Habilidades:</strong> As pedras utilizadas para treinar e evoluir suas Skills podem ser compradas diretamente no NPC da <strong>Time Shop</strong>.</li>
+                        <li><strong>⏱️ Farm de Time Points (Multi-Client):</strong> Se o seu computador tiver hardware suficiente para rodar mais de uma instância do jogo sem perder desempenho, <strong>vale muito a pena abrir contas secundárias simultaneamente</strong>. Manter personagens adicionais logados (em modo lojinha ou parados na cidade) multiplica drasticamente o ganho de pontos por minuto (Time Points), permitindo acumular recursos na loja de pontos de forma muito mais rápida.</li>
+                    </ul>
+                </div>
+
+                <h3 style="margin-top: 35px; font-family: 'Cinzel', serif; color: #694318;">📍 Rota Oficial de Treinamento (Nível 1 ao 100)</h3>
+                <p style="margin-bottom: 15px;">Abaixo está a linha de progressão militar recomendada para todos os membros do clã. Utilize <strong>Cristais de Invocação</strong> nas etapas iniciais para consolidar o avanço.</p>
+
+                <div style="overflow-x: auto;">
+                    <table style="width: 100%; border-collapse: collapse; margin-top: 10px; font-weight: 600; background-color: #dccbaa; border: 1px solid #bfae8f;">
+                        <thead>
+                            <tr style="background-color: #8a683e; color: #fff; font-family: 'Cinzel', serif; text-align: left;">
+                                <th style="padding: 12px; border: 1px solid #bfae8f;">Faixa de Nível</th>
+                                <th style="padding: 12px; border: 1px solid #bfae8f;">Local de Caça / Zona de Destino</th>
+                                <th style="padding: 12px; border: 1px solid #bfae8f;">Metodologia / Notas</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr style="border-bottom: 1px solid #bfae8f;">
+                                <td style="padding: 10px; border: 1px solid #bfae8f; color: #8c5827;">01 - 40</td>
+                                <td style="padding: 10px; border: 1px solid #bfae8f;">Mapas Iniciais ➔ Oásis</td>
+                                <td style="padding: 10px; border: 1px solid #bfae8f;">Progredir utilizando Cristais de Invocação.</td>
+                            </tr>
+                            <tr style="border-bottom: 1px solid #bfae8f; background-color: #d2c3a3;">
+                                <td style="padding: 10px; border: 1px solid #bfae8f; color: #8c5827;">40 - 50</td>
+                                <td style="padding: 10px; border: 1px solid #bfae8f;">Oásis</td>
+                                <td style="padding: 10px; border: 1px solid #bfae8f;">Foco total em combate e dano em Área (AoE).</td>
+                            </tr>
+                            <tr style="border-bottom: 1px solid #bfae8f;">
+                                <td style="padding: 10px; border: 1px solid #bfae8f; color: #8c5827;">50 - 55</td>
+                                <td style="padding: 10px; border: 1px solid #bfae8f;">Calabouço Antigo 2F</td>
+                                <td style="padding: 10px; border: 1px solid #bfae8f;">Hs escondido na direita e fechados (AoE).</td>
+                            </tr>
+                            <tr style="border-bottom: 1px solid #bfae8f; background-color: #d2c3a3;">
+                                <td style="padding: 10px; border: 1px solid #bfae8f; color: #8c5827;">55 - 60</td>
+                                <td style="padding: 10px; border: 1px solid #bfae8f;">Caverna da Abelha</td>
+                                <td style="padding: 10px; border: 1px solid #bfae8f;">Hs principal (AoE).</td>
+                            </tr>
+                            <tr style="border-bottom: 1px solid #bfae8f;">
+                                <td style="padding: 10px; border: 1px solid #bfae8f; color: #8c5827;">60 - 65</td>
+                                <td style="padding: 10px; border: 1px solid #bfae8f;">Calabouço Antigo 3F</td>
+                                <td style="padding: 10px; border: 1px solid #bfae8f;">Hs principal throne  (AoE).</td>
+                            </tr>
+                            <tr style="border-bottom: 1px solid #bfae8f; background-color: #d2c3a3;">
+                                <td style="padding: 10px; border: 1px solid #bfae8f; color: #8c5827;">65 - 70</td>
+                                <td style="padding: 10px; border: 1px solid #bfae8f;">Santuário Sombrio</td>
+                                <td style="padding: 10px; border: 1px solid #bfae8f;">Hs principal (AoE).</td>
+                            </tr>
+                            <tr style="border-bottom: 1px solid #bfae8f;">
+                                <td style="padding: 10px; border: 1px solid #bfae8f; color: #8c5827;">70 - 75</td>
+                                <td style="padding: 10px; border: 1px solid #bfae8f;">Templo Maldito 1F</td>
+                                <td style="padding: 10px; border: 1px solid #bfae8f;">Hs principal  (AoE).</td>
+                            </tr>
+                            <tr style="border-bottom: 1px solid #bfae8f; background-color: #d2c3a3;">
+                                <td style="padding: 10px; border: 1px solid #bfae8f; color: #8c5827;">75 - 80</td>
+                                <td style="padding: 10px; border: 1px solid #bfae8f;">Templo Maldito 2F</td>
+                                <td style="padding: 10px; border: 1px solid #bfae8f;">Hs principal  (AoE).</td>
+                            </tr>
+                            <tr style="border-bottom: 1px solid #bfae8f;">
+                                <td style="padding: 10px; border: 1px solid #bfae8f; color: #8c5827;">80 - 85</td>
+                                <td style="padding: 10px; border: 1px solid #bfae8f;">Estrada de Ferro do Caos (Iron 1)</td>
+                                <td style="padding: 10px; border: 1px solid #bfae8f;">Dano massivo necessário no spot. Hs principal  (AoE).</td>
+                            </tr>
+                            <tr style="border-bottom: 1px solid #bfae8f; background-color: #d2c3a3;">
+                                <td style="padding: 10px; border: 1px solid #bfae8f; color: #8c5827;">85 - 90</td>
+                                <td style="padding: 10px; border: 1px solid #bfae8f;">Coração de Perum (Iron 2)</td>
+                                <td style="padding: 10px; border: 1px solid #bfae8f;">Dano massivo necessário no spot. Hs principal  (AoE)</td>
+                            </tr>
+                            <tr style="border-bottom: 1px solid #bfae8f;">
+                                <td style="padding: 10px; border: 1px solid #bfae8f; color: #8c5827;">90 - 95</td>
+                                <td style="padding: 10px; border: 1px solid #bfae8f;">Vale Gallubia (Ice 1) / Santuário Congelado (Ice 2)</td>
+                                <td style="padding: 10px; border: 1px solid #bfae8f;">Dano massivo necessário no spot. Hs principal  (AoE).</td>
+                            </tr>
+                            <tr style="border-bottom: 1px solid #bfae8f; background-color: #d2c3a3;">
+                                <td style="padding: 10px; border: 1px solid #bfae8f; color: #8c5827;">95 - 100</td>
+                                <td style="padding: 10px; border: 1px solid #bfae8f;">Vale Gallubia (Ice 1) / Santuário Congelado (Ice 2) / Ilha Perdida (Lost)</td>
+                                <td style="padding: 10px; border: 1px solid #bfae8f;">Reta final para o nível 100. Coordenação de PT obrigatória.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="guia-box" style="margin-top: 20px; border-left: 5px solid #3c7bb6;">
+                    <h4>📜 Diretriz de Missões: Sistema de Quests Automáticas</h4>
+                    <p style="margin-top: 10px;">Missões clássicas e originais para você sentir a nostalgia!
+Navegue até a aba <strong>Missões</strong> para dúvidas !</li>
+                    </ul>
+                </div>
+
+                <h3 style="margin-top: 35px; font-family: 'Cinzel', serif; color: #694318;">🛠️ Tratado de Aging & Forja de Mix (Mecânicas Avançadas)</h3>
+                
+                <div class="guia-box" style="margin-top: 15px; border-left: 5px solid #8c5827;">
+                    <h4>⚡ Entendendo as Taxas do Aging (Alerta de Regressão)</h4>
+                    <p style="margin-top: 10px;">Existe um conceito vital no sistema de Aging que confunde muitos aventureiros: <strong>as porcentagens exibidas na tela representam apenas a segurança contra a QUEBRA do item</strong>, e não a garantia de sucesso.</p>
+                    <ul style="list-style-type: circle; margin-left: 25px; margin-top: 5px; font-weight: 600;">
+                        <li><strong>Etapa de Segurança (Até o +7):</strong> Nessas faixas iniciais, a taxa contra a destruição total do equipamento é de 100% (o item nunca vai quebrar).</li>
+                        <li><strong>Chance de Falha e Retrocesso:</strong> Mesmo estando nessa margem segura onde o item não se destrói, a tentativa pode resultar em falha. Caso falhe, <strong>o item sofrerá uma regressão e perderá níveis de Aging</strong> (voltando um nível). Esteja sempre preparado psicologicamente para essa mecânica!</li>
+                    </ul>
+                </div>
+
+                <div class="guia-box" style="margin-top: 20px; border-left: 5px solid #a6854b;">
+                    <h4>💎 O Poder dos Mixes (Metagame Dinas PT)</h4>
+                    <p style="margin-top: 10px;">Os mix estão desativados.</p>
+                </div>
+
+                <h3 style="margin-top: 35px; font-family: 'Cinzel', serif; color: #694318;">💰 Guia de Drops Avançados (Sheltons & Tier 80)</h3>
+                
+                <div class="guia-box" style="margin-top: 15px; border-left: 5px solid #8c5827;">
+                    <h4>💎 Logística de Sheltons, Sheltons Force & Sheltons Mágicos</h4>
+                    <p style="margin-top: 10px;">Itens essenciais para sustentar os processos de Aging e Mixes de alto nível. Saiba exatamente onde caçar cada um:</p>
+                    
+                    <div style="overflow-x: auto; margin-top: 15px;">
+                        <table style="width: 100%; border-collapse: collapse; font-weight: 600; background-color: #dccbaa; border: 1px solid #bfae8f; font-size: 0.95rem;">
+                            <thead>
+                                <tr style="background-color: #694318; color: #fff; font-family: 'Cinzel', serif; text-align: left;">
+                                    <th style="padding: 10px; border: 1px solid #bfae8f;">Shelton</th>
+                                    <th style="padding: 10px; border: 1px solid #bfae8f;">Zonas de Drop (Monstros Comuns)</th>
+                                    <th style="padding: 10px; border: 1px solid #bfae8f;">Notas de Caça</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr style="border-bottom: 1px solid #bfae8f;">
+                                    <td style="padding: 10px; border: 1px solid #bfae8f; color: #8c5827;">✨ Devine</td>
+                                    <td style="padding: 10px; border: 1px solid #bfae8f;">Estrada de Ferro do Caos (iron 1), Coração de Perum (Iron 2), Vale Gallubia (Ice 1), Santuário Congelado (Ice 2) e Ilha Perdida (Lost 1)</td>
+                                    <td style="padding: 10px; border: 1px solid #bfae8f;">O Shelton avançado mais acessível para farm diário.</td>
+                                </tr>
+                                <tr style="border-bottom: 1px solid #bfae8f; background-color: #d2c3a3;">
+                                    <td style="padding: 10px; border: 1px solid #bfae8f; color: #8c5827;">🔮 Celesto</td>
+                                    <td style="padding: 10px; border: 1px solid #bfae8f;">Coração de Perum (Iron 2), Santuário Congelado (Ice 2) e Ilha Perdida (Lost 1)</td>
+                                    <td style="padding: 10px; border: 1px solid #bfae8f;">Começa a se consolidar a partir do end-game de Iron 2.</td>
+                                </tr>
+                                <tr style="border-bottom: 1px solid #bfae8f;">
+                                    <td style="padding: 10px; border: 1px solid #bfae8f; color: #8c5827;">🌌 Mirage</td>
+                                    <td style="padding: 10px; border: 1px solid #bfae8f;">Vale Gallubia (Ice 1), Santuário Congelado (Ice 2), Ilha Perdida (Lost 1)</td>
+                                    <td style="padding: 10px; border: 1px solid #bfae8f;">Drop valorizado.</td>
+                                </tr>
+                                <tr style="border-bottom: 1px solid #bfae8f; background-color: #d2c3a3;">
+                                    <td style="padding: 10px; border: 1px solid #bfae8f; color: #4a2f11;">🔥 Inferna</td>
+                                    <td style="padding: 10px; border: 1px solid #bfae8f;">Ilha Perdida (Lost 1)</td>
+                                    <td style="padding: 10px; border: 1px solid #bfae8f;">Raridade máxima. Foco total em spots avançados de Ilha Perdida.</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="guia-box" style="margin-top: 20px; border-left: 5px solid #a6854b;">
+                    <h4>⚔️ Potencial de Drop: Grades do Tier 80 & Pedra Jera</h4>
+                    <p style="margin-top: 10px;">O metagame do Dinas dita regras estritas de zonas para o escalonamento das subgrades do nível 80. Fique atento, pois a categoria <strong>80C, 80D é craft e está dropando bastante pedras nos boss a partir de Ice 1</strong>.</p>
+                    
+                    <div style="overflow-x: auto; margin-top: 15px;">
+                        <table style="width: 100%; border-collapse: collapse; font-weight: 600; background-color: #dccbaa; border: 1px solid #bfae8f; font-size: 0.95rem;">
+                            <thead>
+                                <tr style="background-color: #694318; color: #fff; font-family: 'Cinzel', serif; text-align: left;">
+                                    <th style="padding: 10px; border: 1px solid #bfae8f;">Grade / Item</th>
+                                    <th style="padding: 10px; border: 1px solid #bfae8f;">Monstros Comuns (Spots)</th>
+                                    <th style="padding: 10px; border: 1px solid #bfae8f;">Disponibilidade em Chefes (Boss)</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr style="border-bottom: 1px solid #bfae8f;">
+                                    <td style="padding: 10px; border: 1px solid #bfae8f; color: #8c5827;">🛡️ Tier 80A</td>
+                                    <td style="padding: 10px; border: 1px solid #bfae8f;">Coração de Perum (Iron 2)</td>
+                                    <td style="padding: 10px; border: 1px solid #bfae8f;">Ativo em Bosses a partir de <strong>Iron 1</strong> em diante.</td>
+                                </tr>
+                                <tr style="border-bottom: 1px solid #bfae8f; background-color: #d2c3a3;">
+                                    <td style="padding: 10px; border: 1px solid #bfae8f; color: #8c5827;">🛡️ Tier 80B</td>
+                                    <td style="padding: 10px; border: 1px solid #bfae8f;">Vale Gallubia (Ice 1)</td>
+                                    <td style="padding: 10px; border: 1px solid #bfae8f;">Ativo em Bosses a partir de <strong>Ice 1</strong> em diante.</td>
+                                </tr>
+                                <tr style="border-bottom: 1px solid #bfae8f;">
+                                    <td style="padding: 10px; border: 1px solid #bfae8f; color: #8c5827;">🛡️ Tier 80C</td>
+                                    <td style="padding: 10px; border: 1px solid #bfae8f;">Santuário Congelado (Ice 2)</td>
+                                    <td style="padding: 10px; border: 1px solid #bfae8f;">Exclusivo de craft, farmar recursos em Bosses a partir de <strong>Ice 1 (Lost 1).</td>
+                                </tr>
+                                <tr style="border-bottom: 1px solid #bfae8f; background-color: #d2c3a3;">
+                                    <td style="padding: 10px; border: 1px solid #bfae8f; color: #4a2f11;">💀 Tier 80D</td>
+                                    <td style="padding: 10px; border: 1px solid #bfae8f; color: #b52a2a;">Ilha Perdida (Lost) - [DIFÍCIL]</td>
+                                    <td style="padding: 10px; border: 1px solid #bfae8f;">Exclusivo de craft, farmar recursos em Bosses a partir de <strong>Ice 1 (Lost 1)</strong>.</td>
+                                </tr>
+                                <tr style="border-bottom: 1px solid #bfae8f;">
+                                    <td style="padding: 10px; border: 1px solid #bfae8f; color: #2c662d;">💎 Pedra Jera</td>
+                                    <td style="padding: 10px; border: 1px solid #bfae8f;">Disponível de <strong>Ice 1 em diante</strong> (Alta frequência em <strong>Ilha Perdida</strong>).</td>
+                                    <td style="padding: 10px; border: 1px solid #bfae8f;">Presença garantida em drops a partir de <strong>Iron 1</strong>.</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <h3 style="margin-top: 35px; font-family: 'Cinzel', serif; color: #694318;">💰 Tratado de Finanças & Farm de Ouro (Gold)</h3>
+                
+                <div class="guia-box" style="margin-top: 15px; border-left: 5px solid #2c662d;">
+                    <h4>⚔️ O Fenômeno do SoD Solo (Faixa 9X AoE)</h4>
+                    <p style="margin-top: 10px;">Para os guerreiros focados em classes com dano em Área (AoE) que atingiram a faixa do <strong>nível 9X</strong>, o <strong>SoD (Survive or Die) solo</strong> é a mina de ouro definitiva do servidor. Uma rodada bem executada e focada em controle de mob rende <strong>mais de 2.000.000 (2kk) de gold bruto</strong> de forma rápida. Priorize essa rotina para enriquecer.</p>
+                </div>
+
+                <div class="guia-box" style="margin-top: 20px; border-left: 5px solid #b52a2a;">
+                    <h4>⏱️ Logística de Itens de Loja: Coletor de 12 Horas</h4>
+                    <p style="margin-top: 10px;">O uso do item <strong>Coletor de 12 horas</strong> deve ser feito de forma estritamente estratégica para evitar desperdício de moedas:</p>
+                    <ul style="list-style-type: square; margin-left: 25px; margin-top: 10px; font-weight: 600;">
+                        <li><strong>Zonas de Lucro Máximo:</strong> O investimento vale a pena exclusivamente em mapas intermediários que dropam valores altos de ouro bruto no chão, indo <strong>até a região de Heart of Perum (Iron 2)</strong>.</li>
+                        <li><strong>O Declínio do End-Game:</strong> Fique atento! A partir de <strong>Vale Gallubia (Ice 1) em diante</strong>, a mecânica do servidor reduz drasticamente a taxa de drop de ouro puro dos monstros. Desative ou não renove o Coletor nessa área, pois o foco ali passa a ser exclusivamente XP e drops de equipamentos/Sheltons.</li>
+                    </ul>
+                </div>
+
+                <h3 style="margin-top: 35px; font-family: 'Cinzel', serif; color: #694318;">📢 Sistema de Monitoramento & Alerta de Bosses</h3>
+                
+                <div class="guia-box" style="margin-top: 15px; border-left: 5px solid #bc8f42;">
+                    <h4>🤖 Automação e Sincronia de Escuta (Discord do Clã)</h4>
+                    <p style="margin-top: 10px;">Para garantir que o nosso contingente domine as principais disputas de drops do Dinas PT, integramos um bot de monitoramento em tempo real no nosso servidor do Discord. Ele atua como o nosso batedor avançado.</p>
+                    
+                    <p style="margin-top: 10px; font-weight: 600;">Como funciona o Alerta:</p>
+                    <ul style="list-style-type: square; margin-left: 25px; margin-top: 5px; font-weight: 600;">
+                        <li><strong>Chamada Imediata (@here):</strong> O bot realiza a marcação <code>@here</code> em cada aviso. Isso significa que todo membro que estiver online receberá uma notificação instantânea para se mobilizar.</li>
+                        <li><strong>Antecedência Crítica:</strong> Exatamente <strong>3 minutos antes</strong> de qualquer Boss nascer, a notificação é disparada.</li>
+                        <li><strong>Canal Oficial:</strong> Os avisos caem na aba <em>Guias de Jogo</em>, diretamente dentro do canal <strong>#alerta-boss</strong>.</li>
+                        <li><strong>Informações Fornecidas:</strong> A mensagem traz o nome do Boss exato que está despertando e em qual mapa ele vai dar o respawn.</li>
+                        <li><strong>Zonas Cobertas pelo Radar:</strong> Estrada de Ferro do Caos (Iron 1), Coração de Perum (Iron 2), Vale Gallubia (Ice 1), Santuário Congelado (Ice 2) e Ilha Perdida (Lost 1).</li>
+                    </ul>
+
+                    <div style="margin-top: 20px; text-align: center; background-color: #120904; padding: 15px; border: 1px solid #3d2411; border-radius: 4px;">
+                        <p style="font-size: 0.9rem; color: #bc8f42; margin-bottom: 10px; font-family: 'Cinzel', serif;">📷 Demonstração do Radar in-Discord</p>
+                        <img src="images/alerta_boss.png" alt="Print do Canal Alerta-Boss Discord" style="max-width: 100%; height: auto; border: 2px solid #8a683e; box-shadow: 0 4px 10px rgba(0,0,0,0.5); display: inline-block;">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+<section id="mapas" class="tab-content">
+    <div class="card">
+        <h2>🗺️ Mapa do Continente</h2>
+        <p>Lista de localidades e níveis mínimos de acesso.</p>
+        
+        <div class="gallery-grid">
+            <div class="gallery-item"><img src="images/mapa_jardim_liberdade.jpg" alt="Jardim da Liberdade"><div class="desc">Jardim da Liberdade (Lv 1)</div></div>
+            <div class="gallery-item"><img src="images/mapa_estrada_ventos.jpg" alt="Estrada dos Ventos"><div class="desc">Estrada dos Ventos (Lv 1)</div></div>
+            <div class="gallery-item"><img src="images/mapa_floresta_bamboo.jpg" alt="Floresta Bamboo"><div class="desc">Floresta Bamboo (Lv 1)</div></div>
+            <div class="gallery-item"><img src="images/mapa_vale_tranquilo.jpg" alt="Vale Tranquilo"><div class="desc">Vale Tranquilo (Lv 1)</div></div>
+            <div class="gallery-item"><img src="images/mapa_mata_acacias.jpg" alt="Mata das Acácias"><div class="desc">Mata das Acácias (Lv 1)</div></div>
+            <div class="gallery-item"><img src="images/mapa_floresta_ilusao.jpg" alt="Floresta das Ilusões"><div class="desc">Floresta das Ilusões (Lv 1)</div></div>
+            <div class="gallery-item"><img src="images/mapa_refugio_ancioes.jpg" alt="Refúgio dos Anciões"><div class="desc">Refúgio dos Anciões (Lv 1)</div></div>
+            <div class="gallery-item"><img src="images/mapa_castelo_perdidos.jpg" alt="Castelo dos Perdidos"><div class="desc">Castelo dos Perdidos (Lv 1)</div></div>
+            <div class="gallery-item"><img src="images/mapa_floresta_espiritos.jpg" alt="Floresta dos Espíritos"><div class="desc">Floresta dos Espíritos (Lv 1)</div></div>
+            <div class="gallery-item"><img src="images/mapa_vila_ruinem.jpg" alt="Vila Ruinem"><div class="desc">Vila Ruinem (Lv 1)</div></div>
+            <div class="gallery-item"><img src="images/mapa_terra_maldita.jpg" alt="Terra Maldita"><div class="desc">Terra Maldita (Lv 1)</div></div>
+            <div class="gallery-item"><img src="images/mapa_terra_esquecida.jpg" alt="Terra Esquecida"><div class="desc">Terra Esquecida (Lv 1)</div></div>
+            <div class="gallery-item"><img src="images/mapa_oasis.jpg" alt="Oásis"><div class="desc">Oásis (Lv 1)</div></div>
+            <div class="gallery-item"><img src="images/mapa_navisko.jpg" alt="Navisko Cidade"><div class="desc">Navisko Cidade (Lv 1)</div></div>
+            <div class="gallery-item"><img src="images/mapa_c_antigo_1f.jpg" alt="Calabouço Antigo 1"><div class="desc">Calabouço Antigo 1F (Lv 40)</div></div>
+            <div class="gallery-item"><img src="images/mapa_c_antigo_2f.jpg" alt="Calabouço Antigo 2"><div class="desc">Calabouço Antigo 2F (Lv 50)</div></div>
+            <div class="gallery-item"><img src="images/mapa_caverna_abelhas.jpg" alt="Caverna das Abelhas"><div class="desc">Caverna das Abelhas (Lv 55)</div></div>
+            <div class="gallery-item"><img src="images/mapa_caverna_cogumelos.jpg" alt="Caverna dos Cogumelos"><div class="desc">Caverna dos Cogumelos (Lv 55)</div></div>
+            <div class="gallery-item"><img src="images/mapa_campo_batalha.jpg" alt="Campo de Batalha"><div class="desc">Campo de Batalha (Lv 55)</div></div>
+            <div class="gallery-item"><img src="images/mapa_terra_proibida.jpg" alt="Terra Proibida"><div class="desc">Terra Proibida (Lv 55)</div></div>
+            <div class="gallery-item"><img src="images/mapa_c_antigo_3f.jpg" alt="Calabouço Antigo 3"><div class="desc">Calabouço Antigo 3F (Lv 60)</div></div>
+            <div class="gallery-item"><img src="images/mapa_santuario_sombrio.jpg" alt="Santuário Sombrio"><div class="desc">Santuário Sombrio (Lv 65)</div></div>
+            <div class="gallery-item"><img src="images/mapa_lago_ganancia.jpg" alt="Lago da Ganância"><div class="desc">Lago da Ganância (Lv 70)</div></div>
+            <div class="gallery-item"><img src="images/mapa_t_maldito_1f.jpg" alt="Templo Maldito 1"><div class="desc">Templo Maldito 1F (Lv 70)</div></div>
+            <div class="gallery-item"><img src="images/mapa_t_maldito_2f.jpg" alt="Templo Maldito 2"><div class="desc">Templo Maldito 2F (Lv 75)</div></div>
+            <div class="gallery-item"><img src="images/mapa_t_maldito_3f.jpg" alt="Templo Maldito 3"><div class="desc">Templo Maldito 3F (Lv 80)</div></div>
+            <div class="gallery-item"><img src="images/mapa_iron_1.jpg" alt="Estrada de Ferro 1"><div class="desc">Estrada de Ferro (Lv 80)</div></div>
+            <div class="gallery-item"><img src="images/mapa_coracao_perum.jpg" alt="Coração de Perum"><div class="desc">Coração de Perum (Lv 85)</div></div>
+            <div class="gallery-item"><img src="images/mapa_vila_eura.jpg" alt="Vila Eura"><div class="desc">Vila Eura (Lv 90)</div></div>
+            <div class="gallery-item"><img src="images/mapa_vale_gallubia.jpg" alt="Vale Gallubia"><div class="desc">Vale Gallubia (Lv 90)</div></div>
+            <div class="gallery-item"><img src="images/mapa_santuario_congelado.jpg" alt="Santuário Congelado"><div class="desc">Santuário Congelado (Lv 90)</div></div>
+<div class="gallery-item"><img src="images/mapa_kelvezu.jpg" alt="Caverna Kelvezu"><div class="desc">Caverna Kelvezu (Lv 90)</div></div>
+            <div class="gallery-item"><img src="images/mapa_ilha_perdida.jpg" alt="Ilha Perdida"><div class="desc">Ilha Perdida (Lv 95)</div></div>
+            <div class="gallery-item"><img src="images/mapa_templo_perdido.jpg" alt="Templo Perdido"><div class="desc">Templo Perdido (Lv 100)</div></div>
+            <div class="gallery-item"><img src="images/mapa_torre_1f.jpg" alt="Torre sem Fim 1"><div class="desc">Torre sem Fim 1F (Lv 100)</div></div>
+            <div class="gallery-item"><img src="images/mapa_torre_2f.jpg" alt="Torre sem Fim 2"><div class="desc">Torre sem Fim 2F (Lv 105)</div></div>
+            <div class="gallery-item"><img src="images/mapa_torre_3f.jpg" alt="Torre sem Fim 3"><div class="desc">Torre sem Fim 3F (Lv 108)</div></div>
+            <div class="gallery-item"><img src="images/mapa_mina_gelo.jpg" alt="Mina de Gelo"><div class="desc">Mina de Gelo (Lv 110)</div></div>
+            <div class="gallery-item"><img src="images/mapa_laboratorio.jpg" alt="Laboratório"><div class="desc">Laboratório Secreto (Lv 118)</div></div>
+            <div class="gallery-item"><img src="images/mapa_arma_antiga.jpg" alt="Arma Antiga"><div class="desc">Arma Antiga (Lv 123)</div></div>
+            <div class="gallery-item"><img src="images/mapa_estrada_sombria.jpg" alt="Estrada Sombria"><div class="desc">Estrada Sombria (Lv 130)</div></div>
+            <div class="gallery-item"><img src="images/mapa_abismo_mar.jpg" alt="Abismo do Mar"><div class="desc">Abismo do Mar (Lv 140)</div></div>
+            <div class="gallery-item"><img src="images/mapa_abismo_cong.jpg" alt="Abismo Congelado"><div class="desc">Abismo do Mar Cong. (Lv 155)</div></div>
+            <div class="gallery-item"><img src="images/mapa_santuario_abismo.jpg" alt="Santuário Abismo"><div class="desc">Santuário do Abismo (Lv 165)</div></div>
+            <div class="gallery-item"><img src="images/mapa_coracao_fogo.jpg" alt="Coração de Fogo"><div class="desc">Coração de Fogo (Lv 172)</div></div>
+        </div>
+    </div>
+</section>
+
+
+
+<section id="missoes" class="tab-content">
+    <div class="card">
+        <h2>📜 Guia Oficial de Missões</h2>
+        <p>Selecione a faixa de nível das Missões que deseja conferir:</p>
+        
+        <div class="filter-buttons" style="margin-bottom: 25px; display: flex; gap: 10px; justify-content: center; flex-wrap: wrap;">
+            <button class="nav-btn" onclick="filtrarMissoes('1-40')">Lv 1-40</button>
+            <button class="nav-btn" onclick="filtrarMissoes('41-80')">Lv 41-80</button>
+            <button class="nav-btn" onclick="filtrarMissoes('81-110')">Lv 81-110</button>
+            <button class="nav-btn" onclick="filtrarMissoes('111-140')">Lv 111-140</button>
+            <button class="nav-btn" onclick="filtrarMissoes('141+')">Lv 141+</button>
+            <button class="nav-btn" onclick="filtrarMissoes('todas')">Todas</button>
+        </div>
+
+        <div id="lista-missoes">
+           
+
+
+
+
+ <div class="missao-item guia-box" data-level="1" style="display: none; margin-bottom: 15px;">
+    <h3>📜 Instrutora Amanda: Série de Recrutamento</h3>
+    <p><em>Localização: Ricarten (Entre o Baú e o Mix) | Pillai (Próximo à Vovó Molly)</em></p>
+    
+    <div style="text-align: center; margin: 15px 0;">
+        </div>
+
+    <ul style="list-style-type: none; padding-left: 0;">
+        <li style="margin-bottom: 10px;"><strong>1ª Etapa (O Primeiro Passo):</strong> Entregue o bolo ao Vigia Arent e reporte à Amanda. <em>Recompensa:</em> Arma específica da classe.</li>
+        <li style="margin-bottom: 10px;"><strong>2ª Etapa (Contenção):</strong> Elimine 5 Hopies e reporte à Amanda. <em>Recompensa:</em> Bracelete Largo de classe.</li>
+        <li style="margin-bottom: 10px;"><strong>3ª Etapa (Logística):</strong> Entregue o doce ao Ferreiro Gus em Ricarten. <em>Recompensa:</em> 20 poções pequenas (HP/MP/RES).</li>
+        <li style="margin-bottom: 10px;"><strong>4ª Etapa (Ameaça na Entrada):</strong> Elimine 5 Duendes Macabros e fale com o guarda da entrada de Ricarten. <em>Recompensa:</em> 1 Colar Precioso (+2) e 2 Anéis Preciosos (+2).</li>
+        <li style="margin-bottom: 10px;"><strong>5ª Etapa (Expedição em Ruinem):</strong> Elimine 10 Esqueletos e reporte ao Ferreiro de Vila Ruinem. <em>Recompensa:</em> 5 Forças Spark.</li>
+        <li style="margin-bottom: 10px;"><strong>6ª Etapa (Ameaça Cíclope):</strong> Elimine 10 Cíclopes e reporte à Amanda. <em>Recompensa:</em> 20 poções grandes (HP/MP/RES).</li>
+        <li style="margin-bottom: 10px;"><strong>7ª Etapa (O Martelo de Umph):</strong> Elimine Bargons até coletar o item de quest <em>Martelo Umph</em> e entregue a Umph em Navisko. <em>Recompensa:</em> 5 Transparos.</li>
+    </ul>
+    <p style="font-size: 0.9rem; color: #8c5827; font-style: italic;">*Nota: Itens de missão são armazenados automaticamente na aba de missões (ícone !).</p>
+</div>
+
+
+
+
+<div class="missao-item guia-box" data-level="20" style="display: none; margin-bottom: 15px;">
+    <h3>⚔️ Quest Tier 2 (Nível 20) - O Desafio de Classe</h3>
+    <p><em>Requisito: Nível 20 e todas as habilidades T1 aprendidas.</em></p>
+    
+    <div style="text-align: center; margin: 15px 0;">
+        </div>
+
+    <p>Para iniciar sua especialização, procure o <strong>Mestre de Habilidades</strong> em sua cidade natal (Ricarten para Tempskrons, Pillai para Morions). Utilize o botão de desafio que aparecerá no canto inferior da janela de texto do NPC.</p>
+
+    <h4 style="margin-top: 15px; color: #8c5827;">📍 Objetivos da Missão (Tempskrons)</h4>
+    <p>Você deve abater os lendários Wolverines e coletar seus troféus. Note que estes espécimes <strong>aparecem apenas durante o período noturno</strong> no continente.</p>
+    
+    <ul style="list-style-type: square; margin-left: 20px; margin-top: 5px;">
+        <li><strong>Wolverine de Bronze (B):</strong> Cauda (Local: Floresta Bamboo).</li>
+        <li><strong>Wolverine Prateado (S):</strong> Garra (Local: Mata das Acácias).</li>
+        <li><strong>Wolverine Dourado (G):</strong> Chifre (Local: Mata das Acácias).</li>
+    </ul>
+
+    <p style="margin-top: 10px; font-size: 0.9rem; color: #b52a2a; font-weight: bold;">⚠️ Protocolo de Atenção:</p>
+    <ul style="list-style-type: disc; margin-left: 20px; font-weight: 600; font-size: 0.9rem;">
+        <li>A taxa de drop não é garantida. Caso não obtenha o item, continue a caçada até que o troféu seja registrado em seu inventário de missões.</li>
+        <li>O tempo é um fator crítico: como eles surgem apenas à noite, mantenha-se em movimento entre a Floresta Bamboo e a Mata das Acácias.</li>
+    </ul>
+
+    <p style="margin-top: 15px;"><strong>Recompensa:</strong> Liberação imediata de 4 novas habilidades de classe (Tier 2).</p>
+    <p style="font-size: 0.85rem; color: #8c5827; font-style: italic; margin-top: 10px;">*Nota: Jogadores da tribo Morion devem consultar o Mestre de Habilidades específico em Pillai para o desafio correspondente.</p>
+</div>
+
+
+<div class="missao-item guia-box" data-level="20" style="display: none; margin-bottom: 15px;">
+    <h3>⚔️ Quest Tier 2 (Nível 20) - Desafio Morion</h3>
+    <p><em>Requisito: Nível 20 e todas as habilidades T1 aprendidas.</em></p>
+
+    <p>Os guerreiros Morion devem realizar um desafio de fabricação artesanal em Pillai. O Mestre Raymon designará uma de duas rotas possíveis:</p>
+
+    <h4 style="margin-top: 15px; color: #8c5827;">Rota A: Geléia Real (Vovó Molly)</h4>
+    <ul style="list-style-type: square; margin-left: 20px; margin-top: 5px;">
+        <li>Fale com o Mestre Raymon e, em seguida, com a Vovó Molly para receber a <strong>Garrafa de Quest</strong>.</li>
+        <li>Cace <strong>Cães Abelha</strong> na Floresta dos Espíritos até coletar <strong>9 Méis</strong>.</li>
+        <li>Com a garrafa e os méis no inventário, dirija-se ao NPC <strong>Moriph</strong> em Pillai e utilize a interface de Aging para transformar os itens na Geléia Real.</li>
+        <li>Entregue a Geléia para a Vovó Molly e retorne ao Mestre Raymon para finalizar.</li>
+    </ul>
+
+    <h4 style="margin-top: 15px; color: #8c5827;">Rota B: Tônico Capilar (Ferreiro Dfrain)</h4>
+    <ul style="list-style-type: square; margin-left: 20px; margin-top: 5px;">
+        <li>Fale com o Mestre Raymon e, em seguida, com o Ferreiro Dfrain para receber a <strong>Garrafa de Quest</strong>.</li>
+        <li>Cace <strong>Árvores Demoníacas</strong> na Floresta dos Espíritos até coletar <strong>7 Óleos Místicos</strong>.</li>
+        <li>No NPC <strong>Moriph</strong> (Pillai), utilize o processo de Aging na garrafa com os 7 óleos para criar o Tônico Capilar.</li>
+        <li>Entregue o tônico ao Ferreiro Dfrain e retorne ao Mestre Raymon para finalizar.</li>
+    </ul>
+
+    <p style="margin-top: 15px; font-size: 0.9rem; color: #b52a2a; font-weight: bold;">⚠️ Protocolo de Persistência:</p>
+    <p style="font-size: 0.9rem; font-weight: 600;">A taxa de drop desses itens é reduzida. O processo exige paciência: mantenha a caçada na Floresta dos Espíritos até completar o requisito. Ao dropar um item de quest, você ouvirá um alerta sonoro característico; monitore seu <strong>Inventário de Itens de Quest (!)</strong> constantemente.</p>
+
+    <p style="margin-top: 15px;"><strong>Recompensa:</strong> Liberação imediata de 4 novas habilidades de classe (Tier 2).</p>
+</div>
+
+
+
+
+<div class="missao-item guia-box" data-level="30" style="display: none; margin-bottom: 15px;">
+    <h3>🛡️ Quest de Nível 30 - Investigação na Terra Esquecida</h3>
+    <p><em>Requisito: Nível 30.</em></p>
+    
+    <p>Uma missão de progressão rápida para fortalecer os atributos básicos do seu personagem.</p>
+
+    <h4 style="margin-top: 15px; color: #8c5827;">📍 Objetivos da Missão:</h4>
+    <ul style="list-style-type: square; margin-left: 20px; margin-top: 5px;">
+        <li>Dirija-se à <strong>Mercadora de Poções</strong> em sua cidade natal (Ricarten ou Pillai).</li>
+        <li>Aceite o chamado para eliminar as hordas de Bargons que estão ameaçando a região.</li>
+        <li>Dirija-se ao mapa <strong>Terra Esquecida</strong> e elimine <strong>20 Bargons</strong>.</li>
+        <li>Retorne à Mercadora para validar a missão.</li>
+    </ul>
+
+    <p style="margin-top: 15px;"><strong>Recompensa:</strong> +5 pontos de status permanentes.</p>
+    
+    <p style="font-size: 0.85rem; color: #8c5827; font-style: italic; margin-top: 10px;">*Dica: Como a Terra Esquecida é uma área de alta densidade, foque em habilidades de área (AoE) para completar o objetivo em poucos minutos.</p>
+</div>
+
+
+
+
+<div class="missao-item guia-box" data-level="40" style="display: none; margin-bottom: 15px;">
+    <h3>⚔️ Quest Tier 3 (Nível 40) - O Desafio da Maturação</h3>
+    <p><em>Requisito: Nível 40 e todas as habilidades T1 e T2 aprendidas.</em></p>
+
+    <h4 style="margin-top: 15px; color: #8c5827;">📍 Etapa 1: A Coleta Noturna</h4>
+    <p>Dirija-se ao Mestre de Habilidades em sua cidade natal para iniciar. O primeiro objetivo é coletar <strong>3 Vamps</strong> derrotando <strong>Menigues Prateados</strong> em Navisko. Atenção: Eles aparecem <strong>apenas durante a noite</strong>.</p>
+
+    <h4 style="margin-top: 15px; color: #8c5827;">📍 Etapa 2: A Maturação da Arma</h4>
+    <p>Após entregar os Vamps, você receberá uma <strong>Arma de Quest</strong>. <strong>Equipe-a obrigatoriamente</strong> para eliminar os monstros da sua lista de progressão:</p>
+
+    <ul style="list-style-type: square; margin-left: 20px; margin-top: 5px; font-weight: 600;">
+        <li><strong>Lutador, Pike, Cavaleiro, Mecânico, Assassina:</strong> 30 Bargons, 40 Guerreiros do Mal e 50 Decapitadores.</li>
+        <li><strong>Atalanta, Arqueira:</strong> 25 Besouros Blindados, 35 Patrulheiros do Mal e 45 Titãs.</li>
+        <li><strong>Mago, Sacerdotisa, Xamã:</strong> 50 monstros na Terra Esquecida, 70 no Oásis e 100 no Calabouço 1º Andar.</li>
+    </ul>
+
+    <p style="margin-top: 10px; font-size: 0.9rem; color: #b52a2a; font-weight: bold;">⚠️ Regras de Ouro:</p>
+    <ul style="list-style-type: disc; margin-left: 20px; font-weight: 600; font-size: 0.9rem;">
+        <li>A arma da missão deve estar equipada durante todas as abates. Skills podem ser usadas, desde que a arma esteja na mão.</li>
+        <li>Ao completar os abates, retorne ao Mestre de Habilidades para concluir a maturação.</li>
+    </ul>
+
+    <p style="margin-top: 15px;"><strong>Recompensa:</strong> Liberação de 4 novas habilidades (Tier 3), 1 anel especial e a Arma da Quest (duração de 5 dias). Após o vencimento do prazo, retorne ao Mestre para uma recompensa surpresa.</p>
+</div>
+
+
+
+<div class="missao-item guia-box" data-level="55" style="display: none; margin-bottom: 15px;">
+    <h3>⚔️ Quest de Nível 55 - Teste de Especialização</h3>
+    <p><em>Requisito: Nível 55.</em></p>
+    
+    <p>Esta missão foca na capacidade de sobrevivência em zonas de perigo específicas para cada tribo. Dirija-se ao <strong>Mestre de Habilidades</strong> da sua cidade natal para iniciar o desafio.</p>
+
+    <h4 style="margin-top: 15px; color: #8c5827;">📍 Objetivos por Tribo:</h4>
+    
+    <div style="margin-top: 10px; padding: 10px; background-color: #d2c3a3; border-radius: 4px;">
+        <p><strong>Tribo Tempskron:</strong></p>
+        <ul style="list-style-type: square; margin-left: 20px;">
+            <li>Local: <strong>Caverna dos Cogumelos</strong>.</li>
+            <li>Objetivo: Eliminar <strong>20 Muffins</strong>.</li>
+        </ul>
+    </div>
+
+    <div style="margin-top: 10px; padding: 10px; background-color: #d2c3a3; border-radius: 4px;">
+        <p><strong>Tribo Morion:</strong></p>
+        <ul style="list-style-type: square; margin-left: 20px;">
+            <li>Local: <strong>Caverna das Abelhas</strong>.</li>
+            <li>Objetivo: Eliminar <strong>20 Abelhas Selvagens</strong>.</li>
+        </ul>
+    </div>
+
+    <p style="margin-top: 15px;">Após completar o abate, retorne imediatamente ao <strong>Mestre de Habilidades</strong> para validar o progresso.</p>
+
+    <p style="margin-top: 15px;"><strong>Recompensa:</strong> +1 Ponto de Habilidade (SP) permanente.</p>
+</div>
+
+
+<div class="missao-item guia-box" data-level="60" style="display: none; margin-bottom: 15px;">
+    <h3>⚔️ Quest Tier 4 (Nível 60) - A Prova de Mestria</h3>
+    <p><em>Requisito: Nível 60 e todas as habilidades T1, T2 e T3 aprendidas.</em></p>
+
+    <p>O desafio final para o desbloqueio do quarto nível de habilidades exige eficiência temporal, rastreamento e superioridade em combate individual. Procure o <strong>Mestre de Habilidades</strong> em sua cidade natal.</p>
+
+    <h4 style="margin-top: 15px; color: #8c5827;">📍 Fase 1: Testes de Eficiência Temporal</h4>
+    <p>O Mestre exigirá duas sessões de caça cronometradas. Você deve eliminar uma quantidade específica de monstros dentro de um tempo rigoroso (Ex: 30 Espectros Negros em 70 minutos). Complete ambas as rodadas para progredir.</p>
+
+    <h4 style="margin-top: 15px; color: #8c5827;">📍 Fase 2: Operação Amuleto Real</h4>
+    <p>Infiltrar-se na <strong>Caverna das Abelhas</strong> e eliminar alvos específicos até recuperar o <strong>Amuleto Real</strong> (Item de Quest). 
+    <br><em>Alvos prováveis:</em> Caramujo Rijo, Ogro Mecânico, Cavaleiro do Mal, Centauros ou Cavaleiro Fantasma (varia conforme o nível exato).</p>
+
+    <h4 style="margin-top: 15px; color: #8c5827;">📍 Fase 3: Confronto de Honra (O Duelo)</h4>
+    <p>Ao entregar o amuleto, você deve enfrentar o Mestre de Habilidades em um duelo 1x1. <strong>Atenção:</strong> Se você for derrotado, o amuleto será perdido e você deverá repetir a Fase 2 inteira.</p>
+
+    <div style="margin-top: 10px; padding: 15px; background-color: #decfa8; border: 1px dashed #8a683e; border-radius: 4px;">
+        <p style="color: #b52a2a; font-weight: bold; margin-bottom: 5px;">⚠️ Protocolos de Duelo (Dicas do Clã):</p>
+        <ul style="list-style-type: disc; margin-left: 20px; font-size: 0.9rem; font-weight: 600;">
+            <li><strong>Bloqueio de Suporte:</strong> O uso de Cores e Cristais de Invocação é estritamente proibido durante o duelo.</li>
+            <li><strong>Estratégia de Suprimentos:</strong> Posicione todas as suas poções de HP no <strong>Cinto</strong>. Existe uma vulnerabilidade onde o Mestre pode consumir poções que estejam soltas no inventário principal.</li>
+            <li><strong>Potencialização:</strong> Utilize Forças (Devine ou Celesto) para garantir que seu dano supere a regeneração do Mestre.</li>
+        </ul>
+    </div>
+
+    <p style="margin-top: 15px;"><strong>Recompensa:</strong> Desbloqueio da Tier 4 (+4 novas habilidades) e introdução dos pontos de <strong>EP (Evolution Points)</strong>, exclusivos para a evolução das magias desta classe.</p>
+</div>
+
+
+<div class="missao-item guia-box" data-level="70" style="display: none; margin-bottom: 15px;">
+    <h3>⚔️ Quest de Nível 70 - A Ascensão do Typhoon</h3>
+    <p><em>Requisito: Nível 70.</em></p>
+
+    <p>Esta missão exige paciência e autocontrole em combate. O objetivo é localizado nas proximidades do Templo Maldito.</p>
+
+    <h4 style="margin-top: 15px; color: #8c5827;">📍 Procedimento de Caça:</h4>
+    <ul style="list-style-type: square; margin-left: 20px; margin-top: 5px;">
+        <li>Procure a <strong>Clériga do Templo</strong> (localizada na área externa ao Templo Maldito) para ativar a missão.</li>
+        <li>Sua tarefa é eliminar <strong>10 Typhoons</strong>.</li>
+        <li>Após o abate, retorne à Clériga para validar a conclusão.</li>
+    </ul>
+
+    <div style="margin-top: 10px; padding: 15px; background-color: #decfa8; border: 1px dashed #b52a2a; border-radius: 4px;">
+        <p style="color: #b52a2a; font-weight: bold; margin-bottom: 5px;">⚠️ Protocolo de Transformação (Crítico):</p>
+        <p style="font-size: 0.9rem; font-weight: 600;">O <strong>Typhoon</strong> não nasce naturalmente; ele é uma evolução do monstro <strong>Hunk</strong>.</p>
+        <ul style="list-style-type: disc; margin-left: 20px; font-size: 0.9rem; font-weight: 600;">
+            <li>Encontre o Hunk e <strong>não o ataque</strong>.</li>
+            <li>Tank o monstro por aproximadamente <strong>2 minutos</strong> até que ele se transforme naturalmente em Typhoon.</li>
+            <li><strong>Atenção:</strong> Se você atacar o Hunk durante esse período, ele se transformará em um <em>Hulk</em>, o que invalidará o progresso da missão.</li>
+        </ul>
+    </div>
+
+    <p style="margin-top: 15px; font-size: 0.85rem; color: #8c5827; font-style: italic;">*Nota do Servidor: O sistema pode exibir a contagem de 20 monstros, mas o requisito real para conclusão é de apenas 10 Typhoons.</p>
+
+    <p style="margin-top: 15px;"><strong>Recompensa:</strong> +5 Pontos de Status e +1 Ponto de Habilidade (SP).</p>
+</div>
+
+
+
+<div class="missao-item guia-box" data-level="75" style="display: none; margin-bottom: 15px;">
+    <h3>⚔️ Quest de Nível 75 - O Fúria Selado</h3>
+    <p><em>Requisito: Nível 75.</em></p>
+
+    <p>Uma missão de incursão direta ao coração do Templo Maldito. Prepare seus suprimentos antes de subir os níveis do templo.</p>
+
+    <h4 style="margin-top: 15px; color: #8c5827;">📍 Objetivos da Missão:</h4>
+    <ul style="list-style-type: square; margin-left: 20px; margin-top: 5px;">
+        <li>Consulte a <strong>Clériga do Templo</strong>, posicionada estrategicamente em frente à entrada do <strong>Templo Maldito</strong>, para receber o chamado.</li>
+        <li>Infiltre-se no <strong>2º Andar do Templo Maldito</strong>.</li>
+        <li>Elimine <strong>5 Ratoos</strong>.</li>
+        <li>Retorne à Clériga para validar a conclusão da missão.</li>
+    </ul>
+
+    <p style="margin-top: 15px; font-size: 0.85rem; color: #8c5827; font-style: italic;">*Nota: O 2º andar é uma área de alto dano. Certifique-se de estar com suas poções e buffs ativos antes de iniciar a caçada aos Ratoos.</p>
+
+    <p style="margin-top: 15px;"><strong>Recompensa:</strong> +5 Pontos de Status e +2 Pontos de Habilidade (SP).</p>
+</div>
+
+
+
+
+<div class="missao-item guia-box" data-level="80" style="display: none; margin-bottom: 15px;">
+    <h3>👑 Quest de Nível 80 - O Teste Real</h3>
+    <p><em>Requisito: Nível 80.</em></p>
+
+    <p>Prepare-se para uma das jornadas mais exigentes do continente. O objetivo é a obtenção da <strong>Carta de Recomendação</strong> através da caça aos Bosses de Quest.</p>
+
+    <h4 style="margin-top: 15px; color: #8c5827;">📍 Roteiro de Operação:</h4>
+    <ul style="list-style-type: square; margin-left: 20px; margin-top: 5px;">
+        <li>Converse com o <strong>Comandante Derik</strong> (Ricarten, próximo ao Mestre de Habilidades).</li>
+        <li>Dirija-se a Navisko e reporte-se ao <strong>Minuren</strong> (Coordenada E-6).</li>
+        <li>Você deve coletar <strong>1 Vamp de Ouro, 1 Vamp de Prata e 1 Vamp de Bronze</strong>.</li>
+        <li>Ao completar o trio, entregue os itens a Minuren para receber a Carta de Recomendação e finalize com o Comandante Derik.</li>
+    </ul>
+
+    <div style="margin-top: 15px; padding: 15px; background-color: #decfa8; border: 1px dashed #b52a2a; border-radius: 4px;">
+        <p style="color: #b52a2a; font-weight: bold; margin-bottom: 5px;">⚠️ Mecânica de Spawn dos Bosses:</p>
+        <p style="font-size: 0.9rem; font-weight: 600;">O horário dos Bosses é dinâmico e reseta diariamente após a 00:00h.</p>
+        <ul style="list-style-type: disc; margin-left: 20px; font-size: 0.9rem; font-weight: 600;">
+            <li>Os Bosses aparecem a cada hora cheia, mas com o minuto variável definido na virada do dia (Ex: Se o spawn for às 01:27, ele ocorrerá às 02:27, 03:27, etc).</li>
+            <li>Após a meia-noite, monitore o primeiro spawn do dia para identificar o novo minuto fixo.</li>
+        </ul>
+    </div>
+
+    <p style="margin-top: 15px;"><strong>Recompensa Vitalícia:</strong> Aumento permanente na bonificação de atributos. Você passará a ganhar <strong>7 pontos de status por level up</strong> (em vez de 5).</p>
+    
+    <p style="font-size: 0.85rem; color: #8c5827; font-style: italic; margin-top: 10px;">*Nota de Progresso: Não se preocupe se o seu nível for superior a 80. Ao concluir, o sistema calculará retroativamente todos os pontos extras devidos desde o nível 80.</p>
+</div>
+
+
+<div class="missao-item guia-box" data-level="80" style="display: none; margin-bottom: 15px;">
+    <h3>🔥 Quest Tier 5 (Nível 80) - A Ascensão Final</h3>
+    <p><em>Requisito: Nível 80 e todas as habilidades da Tier 4 dominadas.</em></p>
+
+    <p>Esta é a jornada definitiva para o desbloqueio das habilidades mais poderosas de sua classe. O desafio é cronometrado e exige precisão absoluta.</p>
+
+    <h4 style="margin-top: 15px; color: #8c5827;">📍 Início da Operação:</h4>
+    <ul style="list-style-type: square; margin-left: 20px; margin-top: 5px;">
+        <li><strong>Tempskrons:</strong> Reportem-se ao Mestre Verkan (Ricarten).</li>
+        <li><strong>Morions:</strong> Reportem-se ao Mestre Raymon (Pillai).</li>
+    </ul>
+
+    <h4 style="margin-top: 15px; color: #8c5827;">📍 As Quatro Etapas (Limite: 90 Minutos):</h4>
+    <p>Você deve completar as fases sequencialmente. A cada conclusão de etapa, retorne ao Mestre para validar o progresso antes da próxima.</p>
+    
+    <ul style="list-style-type: square; margin-left: 20px; margin-top: 5px; font-weight: 600;">
+        <li><strong>1ª Etapa:</strong> Eliminar 40 unidades (Aranha Rainha, Golem de Aço ou Punhos de Aço).</li>
+        <li><strong>2ª Etapa:</strong> Eliminar 40 unidades (Duende Shaman, Hiper-Máquina ou Morte Súbita).</li>
+        <li><strong>3ª Etapa:</strong> Eliminar 40 unidades (Grotesco, Ratoo ou Espectro Negro).</li>
+        <li><strong>4ª Etapa (O Confronto):</strong> Vá à <strong>Estrada de Ferro do Caos</strong> e contate o Ancião Hosean. Ele o enviará para enfrentar <strong>Hestian</strong>. Após a vitória, retorne a Hosean para receber a <em>Pedra Preciosa de Hestian</em>.</li>
+    </ul>
+
+    <div style="margin-top: 15px; padding: 10px; background-color: #decfa8; border: 1px solid #8a683e; border-radius: 4px;">
+        <p style="font-weight: bold; color: #694318;">Conclusão Final:</p>
+        <p>Entregue a <em>Pedra Preciosa de Hestian</em> ao seu Mestre de Habilidades original para liberar definitivamente o seu arsenal da <strong>Tier 5</strong>.</p>
+    </div>
+
+    <p style="margin-top: 15px;"><strong>Recompensa:</strong> +4 novas habilidades de classe (Tier 5).</p>
+</div>
+
+
+<div class="missao-item guia-box" data-level="85" style="display: none; margin-bottom: 15px;">
+    <h3>⚠️ Quest de Nível 85 - O Amuleto das Lágrimas</h3>
+    <p><em>Requisito: Nível 85.</em></p>
+
+    <p>Uma missão de alta responsabilidade. A penalidade de falha é estrita, exigindo foco total durante toda a execução.</p>
+
+    <h4 style="margin-top: 15px; color: #8c5827;">📍 Procedimento de Caça:</h4>
+    <ul style="list-style-type: square; margin-left: 20px; margin-top: 5px;">
+        <li>Fale com a <strong>Clériga do Templo</strong>, localizada na entrada do <strong>Templo Maldito</strong>, para iniciar o desafio.</li>
+        <li>Dirija-se à <strong>Estrada de Ferro do Caos</strong>.</li>
+        <li>Elimine <strong>10 Grotescos</strong>.</li>
+        <li>Retorne à Clériga para validar a conclusão.</li>
+    </ul>
+
+    <div style="margin-top: 15px; padding: 15px; background-color: #decfa8; border: 1px dashed #b52a2a; border-radius: 4px;">
+        <p style="color: #b52a2a; font-weight: bold; margin-bottom: 5px;">⚠️ Protocolo de Risco (Crítico):</p>
+        <ul style="list-style-type: disc; margin-left: 20px; font-size: 0.9rem; font-weight: 600;">
+            <li><strong>Sem Tolerância:</strong> Após iniciar a missão, você não pode desconectar (logoff) e nem morrer.</li>
+            <li><strong>Falha na Missão:</strong> Caso ocorra qualquer um dos eventos acima, todo o progresso será perdido e você deverá retornar à Clériga para reiniciar o desafio do zero.</li>
+        </ul>
+    </div>
+
+    <p style="margin-top: 15px;"><strong>Recompensa:</strong> <strong>Amuleto das Lágrimas</strong>. Este item permanecerá permanentemente em seu Inventário de Itens Quest e reduzirá em 1% a perda de experiência em caso de morte (ex: perda reduzida de 3% para 2%).</p>
+</div>
+
+
+<div class="missao-item guia-box" data-level="90" style="display: none; margin-bottom: 15px;">
+    <h3>⚔️ Quest de Nível 90 - Defesa de Vila Eura</h3>
+    <p><em>Requisito: Nível 90.</em></p>
+
+    <p>Esta missão foca na eliminação de ameaças na região crítica de Perum. Procure o <strong>Mestre da Força de Eura</strong> para receber suas instruções.</p>
+
+    <h4 style="margin-top: 15px; color: #8c5827;">📍 Objetivos da Missão:</h4>
+    <ul style="list-style-type: square; margin-left: 20px; margin-top: 5px;">
+        <li>Dirija-se a <strong>Vila Eura</strong> e consulte o <strong>Mestre da Força de Eura</strong>.</li>
+        <li>Viaje até o mapa <strong>Coração de Perum (Iron 2)</strong>.</li>
+        <li>Elimine <strong>10 Punhos de Aço</strong>.</li>
+        <li>Retorne ao NPC Mestre da Força de Eura para validar a missão e retirar sua recompensa.</li>
+    </ul>
+
+    <p style="margin-top: 15px;"><strong>Recompensa:</strong> <strong>Shelton Roitra</strong> (Adiciona +40 HP permanentemente ao seu personagem).</p>
+</div>
+
+
+<div class="missao-item guia-box" data-level="90" style="display: none; margin-bottom: 15px;">
+    <h3>⚠️ Quest de Nível 90 - Desafio Amargo</h3>
+    <p><em>Requisito: Nível 90 e conclusão do Teste Real (Lv 80).</em></p>
+
+    <p>Uma missão de alta periculosidade que testa sua capacidade de combate sob efeito de uma maldição limitadora.</p>
+
+    <h4 style="margin-top: 15px; color: #8c5827;">📍 Roteiro da Maldição:</h4>
+    <ul style="list-style-type: square; margin-left: 20px; margin-top: 5px;">
+        <li>Inicie com o <strong>Comandante Derik</strong> em Ricarten.</li>
+        <li>Siga para Pillai e encontre o <strong>Mago Real Ray</strong> (Coordenada F6).</li>
+        <li>Ao aceitar o desafio, você será amaldiçoado: <strong>seu Poder de Ataque será reduzido em 30%</strong> e seu personagem exibirá uma aura vermelha.</li>
+    </ul>
+
+    <h4 style="margin-top: 15px; color: #8c5827;">📍 Objetivos e Condições:</h4>
+    <ul style="list-style-type: square; margin-left: 20px; margin-top: 5px;">
+        <li>Dirija-se ao mapa <strong>Coração de Perum</strong>.</li>
+        <li>Elimine <strong>50 monstros</strong> (opções válidas: Máquinas-D, Montanhas ou Omegas).</li>
+        <li>Retorne ao Mago Real Ray para validar a conclusão.</li>
+    </ul>
+
+    <div style="margin-top: 15px; padding: 15px; background-color: #decfa8; border: 1px dashed #b52a2a; border-radius: 4px;">
+        <p style="color: #b52a2a; font-weight: bold; margin-bottom: 5px;">⚠️ Protocolo de Sobrevivência (Crítico):</p>
+        <ul style="list-style-type: disc; margin-left: 20px; font-size: 0.9rem; font-weight: 600;">
+            <li><strong>Morte = Reinício:</strong> Caso você morra durante a caçada, o progresso será resetado e você deverá retornar ao Mago Real Ray para começar do zero.</li>
+            <li><strong>Atenção ao Ataque:</strong> Com 30% a menos de dano, sua velocidade de abate será reduzida. Priorize poções e buffs defensivos para compensar o tempo prolongado em combate.</li>
+        </ul>
+    </div>
+
+    <p style="margin-top: 15px;"><strong>Recompensa Vitalícia:</strong> Otimização extrema de atributos. Seu ganho por nível será ampliado para <strong>10 pontos de status por level up</strong>.</p>
+</div>
+
+
+<div class="missao-item guia-box" data-level="100" style="display: none; margin-bottom: 15px;">
+    <h3>🏆 Quest de Nível 100 - O Desafio dos Fúrias</h3>
+    <p><em>Parabéns pelo Nível 100! A prova final aguarda.</em></p>
+
+    <p>Prepare-se para uma sucessão de combates intensos e estratégicos. Procure o <strong>Mago Real Ray</strong> para iniciar esta jornada de elite.</p>
+
+    <h4 style="margin-top: 15px; color: #8c5827;">📍 Etapas de Progressão:</h4>
+    <ul style="list-style-type: square; margin-left: 20px; margin-top: 5px;">
+        <li><strong>Fase 1:</strong> Elimine alvos em <strong>Coração de Perum (Iron 2)</strong> e reporte ao Mago.</li>
+        <li><strong>Confronto A:</strong> Você será teletransportado para enfrentar o <strong>Fúria Defensivo</strong>.</li>
+        <li><strong>Fase 2:</strong> Elimine alvos em <strong>Gellubia Valley (ICE)</strong> e reporte ao Mago.</li>
+        <li><strong>Confronto B:</strong> Você será teletransportado para enfrentar o <strong>Fúria Ofensivo</strong> (nível de ameaça superior ao primeiro).</li>
+        <li><strong>Confronto C:</strong> Enfrente o <strong>Fúria Balanceado</strong> (equilíbrio entre defesa e ataque).</li>
+    </ul>
+
+    <div style="margin-top: 15px; padding: 15px; background-color: #decfa8; border: 1px dashed #b52a2a; border-radius: 4px;">
+        <p style="color: #b52a2a; font-weight: bold; margin-bottom: 5px;">⚠️ Protocolos de Preparação:</p>
+        <ul style="list-style-type: disc; margin-left: 20px; font-size: 0.9rem; font-weight: 600;">
+            <li><strong>Espaço no Inventário:</strong> Garanta pelo menos <strong>60 de capacidade de peso livre</strong> para receber os itens da quest.</li>
+            <li><strong>Combate Individual:</strong> O uso de Cores e Cristais de Invocação está proibido durante os duelos contra os Fúrias.</li>
+        </ul>
+    </div>
+
+    <p style="margin-top: 15px;"><strong>Recompensa:</strong> <strong>Arma de Quest Única (Nível 100)</strong>.</p>
+    <p style="font-size: 0.85rem; color: #8c5827; font-style: italic; margin-top: 5px;">*Nota: Este item é uma peça de prestígio. Não é possível realizar Aging ou Mix, mas a troca do item entre jogadores é permitida.</p>
+</div>
+
+
+<div class="missao-item guia-box" data-level="103" style="display: none; margin-bottom: 15px;">
+    <h3>🛡️ Quest de Nível 103 - O Guardião Sagrado</h3>
+    <p><em>Requisito: Nível 103.</em></p>
+
+    <p>Uma missão de três estágios que exige logística, paciência e força de combate. Inicie com o mensageiro da sua tribo: <strong>Mensageiro Iam (Ricarten - Tempskron)</strong> ou <strong>Mensageira Rucia (Pillai - Morion)</strong>.</p>
+
+    <h4 style="margin-top: 15px; color: #8c5827;">📍 Parte 1: Caçada aos Bosses (Espécies do Mal)</h4>
+    <p>Derrote os Bosses abaixo para coletar <strong>5 Espécies do Mal</strong>:</p>
+    <ul style="list-style-type: square; margin-left: 20px;">
+        <li><strong>Morgonia (Iron 1):</strong> Horda de 8 Morgons.</li>
+        <li><strong>Montanha Azul (Iron 2):</strong> Horda de 8 Montanhas.</li>
+        <li><strong>Olho de Fogo (Ice 1):</strong> Horda de 5 Olhares de Gelo.</li>
+        <li><strong>Tartaruga Dragão (Ice 2):</strong> Horda de 7 Tartarugas Blindadas.</li>
+        <li><strong>Cão Esqueleto (Lost 1):</strong> Horda de 6 Cães Infernais.</li>
+    </ul>
+
+    <h4 style="margin-top: 15px; color: #8c5827;">📍 Parte 2: O Desafio do Templo</h4>
+    <p>Após encantar os itens com seu mensageiro, vá ao <strong>Templo Perdido (Lost 2)</strong>, na escadaria do Templo Lunar. Ao colocar fragmentos de CStone, <strong>7 Espíritos Malignos</strong> aparecerão sequencialmente. Derrote-os um a um.</p>
+    <p style="font-size: 0.85rem; font-style: italic; color: #8c5827;">*Se morrer, retorne ao mensageiro para repor as CStones e tente novamente.</p>
+
+    <h4 style="margin-top: 15px; color: #8c5827;">📍 Parte 3: Selamento dos Locais Sagrados</h4>
+    <p>O estágio final requer a instalação de <strong>8 CStones</strong> em pontos específicos dos mapas, <strong>entre 14h00 e 00h00</strong>. A sequência de mapas inclui: <em>Mata das Acácias, Floresta das Ilusões, Castelo dos Perdidos, Campo de Batalha, Coração de Perum, Lago da Ganância, Santuário Congelado e Templo Perdido.</em></p>
+
+    <div style="margin-top: 10px; padding: 10px; background-color: #decfa8; border: 1px dashed #b52a2a; border-radius: 4px;">
+        <p style="color: #b52a2a; font-weight: bold; margin-bottom: 5px;">⚠️ Protocolo de Instalação:</p>
+        <ul style="list-style-type: disc; margin-left: 20px; font-size: 0.9rem; font-weight: 600;">
+            <li>Você ficará <strong>vulnerável por 10 segundos</strong> ao fixar cada CStone.</li>
+            <li>Se monstros destruírem a CStone instalada antes do selamento total, você deverá buscar mais unidades com seu mensageiro.</li>
+            <li><strong>Dica:</strong> Se precisar sair do jogo, grave quais selos faltam; o progresso é salvo.</li>
+        </ul>
+    </div>
+
+    <p style="margin-top: 15px;"><strong>Recompensa:</strong> Título de <strong>Guardião Sagrado</strong> e uma <strong>Armadura/Roupão nível 103</strong> (equipamento de elite, permitindo Aging e Mix).</p>
+</div>
+
+<div class="missao-item guia-box" data-level="110" style="display: none; margin-bottom: 15px;">
+    <h3>✨ Quest de Nível 110 - O Amor Eterno</h3>
+    <p><em>Parabéns pelo Nível 110! Uma jornada épica pela história de Valento e Caoscara.</em></p>
+
+    <h4 style="margin-top: 15px; color: #8c5827;">📍 Etapa 1: Amor do Passado</h4>
+    <ul style="list-style-type: square; margin-left: 20px;">
+        <li>Converse com o <strong>Mestre da Força (Vila Eura)</strong> para iniciar.</li>
+        <li>Cace <strong>20 Olhares de Gelo</strong> no Vale Gallubia.</li>
+        <li>Retorne ao Mestre para receber a 1ª experiência.</li>
+        <li>Em seguida, cace o Boss <strong>Caoscara</strong> (Vale Gallubia) para obter o <em>Anel Amaldiçoado</em>. <strong>Atenção:</strong> Você tem um limite de 30 minutos nesta etapa!</li>
+    </ul>
+
+    <h4 style="margin-top: 15px; color: #8c5827;">📍 Etapa 2: Anel da Purificação</h4>
+    <ul style="list-style-type: square; margin-left: 20px;">
+        <li>Entregue o <em>Anel Amaldiçoado</em> ao <strong>Mago Real Ray</strong> (Pillai).</li>
+        <li>Cace o <strong>Golem Minerador</strong> (Mina de Gelo 1F) até dropar o <em>Cristal Mágico Concentrado</em>.</li>
+        <li>Entregue o cristal ao Mago Real Ray em Pillai.</li>
+    </ul>
+
+    <h4 style="margin-top: 15px; color: #8c5827;">📍 Etapa 3: Amor Eterno</h4>
+    <ul style="list-style-type: square; margin-left: 20px;">
+        <li>O Mago purificará o anel, transformando-o no <em>Anel de Noivado Purificado</em>. Leve-o ao <strong>Mestre da Força (Vila Eura)</strong>.</li>
+        <li><strong>Confronto Final:</strong> Derrote o Boss <strong>Valento</strong> (Vale Gallubia).</li>
+        <li>Conclua a missão falando com o Mestre da Força.</li>
+    </ul>
+
+    <div style="margin-top: 15px; padding: 10px; background-color: #decfa8; border: 1px solid #8a683e; border-radius: 4px;">
+        <p style="font-weight: bold; color: #694318;">Resumo de Recompensas:</p>
+        <ul style="list-style-type: disc; margin-left: 20px; font-size: 0.9rem; font-weight: 600;">
+            <li>Experiência massiva em cada etapa (totalizando 3x 231.188.270 EXP).</li>
+            <li><strong>Finalização:</strong> +2 Pontos de Habilidade Especial (EP).</li>
+        </ul>
+    </div>
+</div>
+
+
+<div class="missao-item guia-box" data-level="118" style="display: none; margin-bottom: 15px;">
+    <h3>☢️ Quest de Nível 118 - A Sabotagem do Laboratório</h3>
+    <p><em>Requisito: Nível 118.</em></p>
+
+    <h4 style="margin-top: 15px; color: #8c5827;">📍 Etapa 1 a 4: Investigação e Invasão</h4>
+    <ul style="list-style-type: square; margin-left: 20px;">
+        <li><strong>Fase 1:</strong> Fale com o <strong>Comandante Derik</strong> (Ricarten). Cace <em>Engenheiros do Laboratório</em> no <strong>Laboratório Secreto</strong> até obter o <em>Documento Suspeito</em>. Retorne a Derik.</li>
+        <li><strong>Fase 2:</strong> Entregue o documento à <strong>Artesã Salon</strong> (Ricarten).</li>
+        <li><strong>Fase 3:</strong> Salon lhe dará um relatório; entregue-o ao <strong>Comandante Derik</strong>.</li>
+        <li><strong>Fase 4:</strong> Extermínio! Elimine <strong>60 Invasores</strong> (Técnico, Soldado, Bombardeiro ou Elite) no Laboratório Secreto. Fale com Derik.</li>
+    </ul>
+
+    <h4 style="margin-top: 15px; color: #8c5827;">📍 Etapa 5 a 7: A Produção da Bomba</h4>
+    <ul style="list-style-type: square; margin-left: 20px;">
+        <li><strong>Fase 5:</strong> Fale com <strong>Newter, o Sábio</strong> em Pillai.</li>
+        <li><strong>Fase 6:</strong> Você precisa do <em>Cristal Instável</em>. Cace o Boss <strong>Tulla</strong> na <strong>Mina de Gelo</strong> até obter o item. Entregue a Newter.</li>
+        <li><strong>Fase 7:</strong> Newter lhe entregará a <em>Bomba da Destruição</em>. Leve-a imediatamente ao <strong>Comandante Derik</strong> em Ricarten.</li>
+    </ul>
+
+    <h4 style="margin-top: 15px; color: #8c5827;">📍 Etapa 8: Destruição da Sala de Máquinas</h4>
+    <p>O desafio final requer precisão no Laboratório Secreto:</p>
+    <ul style="list-style-type: square; margin-left: 20px;">
+        <li>Derrote o Boss <strong>Draxos</strong> para limpar a área.</li>
+        <li>Localize o <strong>Ponto Mágico</strong> na sala das máquinas.</li>
+        <li>Com o ponto ativo, abra seu inventário de Quests e clique com o botão direito na <em>Bomba da Destruição</em>.</li>
+    </ul>
+
+    <div style="margin-top: 10px; padding: 10px; background-color: #decfa8; border: 1px dashed #b52a2a; border-radius: 4px;">
+        <p style="color: #b52a2a; font-weight: bold; margin-bottom: 5px;">⚠️ Protocolo de Instalação:</p>
+        <p style="font-size: 0.9rem; font-weight: 600;">O processo de instalação da bomba deixa você <strong>totalmente vulnerável</strong>. Qualquer dano recebido de monstros ou jogadores interromperá o processo. Garanta que a área esteja limpa antes de iniciar.</p>
+    </div>
+
+    <p style="margin-top: 15px;"><strong>Recompensa Total:</strong> Experiência massiva ao longo das etapas e <strong>3 Pontos de Habilidade Especial (EP)</strong> ao concluir o desafio final.</p>
+</div>
+
+
+<div class="missao-item guia-box" data-level="123" style="display: none; margin-bottom: 15px;">
+    <h3>🔮 Quest de Nível 123 - A Queda da Arma Antiga</h3>
+    <p><em>Requisito: Nível 123.</em></p>
+
+    <p>Uma missão extensa que envolve a purificação de almas e a destruição da tecnologia proibida no mapa <strong>Arma Antiga</strong>.</p>
+
+    <h4 style="margin-top: 15px; color: #8c5827;">📍 Etapas 1 a 3: Coleta e Purificação</h4>
+    <ul style="list-style-type: square; margin-left: 20px;">
+        <li><strong>Fase 1:</strong> Fale com a <strong>Alma Flutuante</strong> (Arma Antiga) e elimine 50 <em>Nihils</em>.</li>
+        <li><strong>Fase 2:</strong> Leve o <em>Concentrado de Almas</em> recebido à <strong>Sábia Celina</strong> (Pillai).</li>
+        <li><strong>Fase 3:</strong> Cace na Arma Antiga pelos 4 Cristais de Alma Maligna (Soldado Zumbi/Amarelo, Elite Zumbi/Laranja, Acero/Vermelho e Chalybs/Verde). Entregue a Celina para receber o <em>Cristal Dragão</em>.</li>
+    </ul>
+
+    <h4 style="margin-top: 15px; color: #8c5827;">📍 Etapa 4: Sabotagem na Sala do Greedy</h4>
+    <p>Vá até o grande relógio em Arma Antiga, localize a <strong>linha rosa no chão</strong>, posicione-se no centro e digite: <em>"Que haja PAZ no continente de Priston!"</em>. Você será teleportado para a sala de controle.</p>
+    
+    <div style="margin-top: 10px; padding: 10px; background-color: #decfa8; border: 1px dashed #b52a2a; border-radius: 4px;">
+        <p style="color: #b52a2a; font-weight: bold; margin-bottom: 5px;">⚠️ Protocolo de Instalação:</p>
+        <p style="font-size: 0.9rem; font-weight: 600;">Ao encontrar o <strong>Ponto Mágico</strong> na sala, clique com o botão direito no <em>Concentrado de Alma Maligna</em> em seu inventário de Quests. Assim como na quest anterior, <strong>você ficará vulnerável</strong> durante o processo. Garanta que o local esteja limpo de monstros antes de iniciar.</p>
+    </div>
+
+    <h4 style="margin-top: 15px; color: #8c5827;">📍 Etapa 5 a 7: A Prisão do Greedy</h4>
+    <ul style="list-style-type: square; margin-left: 20px;">
+        <li><strong>Fase 5:</strong> Reporte a suspeita sobre o Greedy à Sábia Celina.</li>
+        <li><strong>Fase 6:</strong> Derrote o Boss <strong>Greedy</strong> no mapa Arma Antiga usando a <em>Prisão Mágica</em> fornecida por Celina.</li>
+        <li><strong>Fase 7:</strong> Entregue o <em>Documento Secreto</em> ao <strong>Comandante Derik</strong> (Ricarten).</li>
+    </ul>
+
+    <p style="margin-top: 15px;"><strong>Recompensa Total:</strong> Experiência massiva, +10 Pontos de Status e <strong>+3 Pontos de Habilidade Especial (EP)</strong>.</p>
+</div>
+
+
+<div class="missao-item guia-box" data-level="130" style="display: none; margin-bottom: 15px;">
+    <h3>🛡️ Quest de Nível 130 - Guardiões do Portal</h3>
+    <p><em>Requisito: Nível 130.</em></p>
+
+    <p>Uma missão de alta complexidade que exige movimentação precisa entre Pillai e o mapa <strong>Estrada Sombria</strong>. Inicie falando com o <strong>Mago Real Ray (Pillai)</strong> e depois com o <strong>Xamã Real (Estrada dos Ventos)</strong>.</p>
+
+    <h4 style="margin-top: 15px; color: #8c5827;">📍 Etapas 1 a 3: O Cerco na Estrada Sombria</h4>
+    <ul style="list-style-type: square; margin-left: 20px;">
+        <li><strong>Etapa 1 (Instalação):</strong> Instale a <em>CStone</em> no local de spawn do Boss (H3, Estrada Sombria). O solo brilhará. <strong>Atenção:</strong> Não receba dano durante a instalação ou o processo será interrompido.</li>
+        <li><strong>Etapa 2 (Extermínio I):</strong> Elimine 80 monstros (Inferno, Guardião Enferrujado ou Sombra Misteriosa). <em>Nota: Seu ataque será reduzido em 30%.</em></li>
+        <li><strong>Etapa 3 (Extermínio II):</strong> Elimine 100 monstros (Crios, Najan ou Ignis). <em>Nota: A redução de 30% no ataque persiste.</em></li>
+    </ul>
+
+    <h4 style="margin-top: 15px; color: #8c5827;">📍 Etapa 4 e 5: O Cristal e o Espectro</h4>
+    <ul style="list-style-type: square; margin-left: 20px;">
+        <li><strong>Etapa 4:</strong> Cace a <strong>Bruxa Mestre</strong> na Estrada Sombria para obter o <em>Cristal Negro</em> (Item de Quest).</li>
+        <li><strong>Etapa 5:</strong> Derrote o Boss <strong>Espectro de Midranda</strong> na Estrada Sombria. Você pode utilizar pergaminhos de invocação, desde que dentro do mapa.</li>
+    </ul>
+
+    <h4 style="margin-top: 15px; color: #8c5827;">📍 Etapa 6: Finalização</h4>
+    <ul style="list-style-type: square; margin-left: 20px;">
+        <li>Retorne a Pillai e entregue o relatório final ao <strong>Mago Real Ray (F6)</strong>.</li>
+    </ul>
+
+    <div style="margin-top: 15px; padding: 10px; background-color: #decfa8; border: 1px dashed #b52a2a; border-radius: 4px;">
+        <p style="color: #b52a2a; font-weight: bold; margin-bottom: 5px;">⚠️ Resumo das Recompensas:</p>
+        <ul style="list-style-type: disc; margin-left: 20px; font-size: 0.9rem; font-weight: 600;">
+            <li>Experiência massiva em cada etapa (Totalizando mais de 635 bilhões de XP).</li>
+            <li><strong>Equipamento:</strong> 2 Brincos Reais (Recebidos conforme o progresso).</li>
+        </ul>
+    </div>
+</div>
+
+
+<div class="missao-item guia-box" data-level="140" style="display: none; margin-bottom: 15px;">
+    <h3>💀 Quest de Nível 140 - Preparação para o Fim</h3>
+    <p><em>Requisito: Nível 140.</em></p>
+
+    <p>Uma missão de exploração profunda no <strong>Abismo do Mar</strong>. Prepare-se para coletar itens raros e enfrentar um dos chefes mais temidos do continente.</p>
+
+    <h4 style="margin-top: 15px; color: #8c5827;">📍 Roteiro de Expedição:</h4>
+    <ul style="list-style-type: square; margin-left: 20px; margin-top: 5px;">
+        <li><strong>Etapa 1:</strong> Fale com a <strong>Sábia Celina (Pillai)</strong> e depois com a <strong>NPC Marina (Abismo do Mar)</strong>. Cace <em>Dey ou Kaan</em> até obter a <em>Escama Áspera</em> e o <em>Respirador Mágico</em>.</li>
+        <li><strong>Etapa 2:</strong> Fale com o <strong>Hermit</strong>. Cace <em>Sathla e Arhdyra</em> para obter a <em>Alma Azul e Vermelha</em>. Retorne a Celina (Pillai) para receber o <em>Pergaminho Espectro de Midranda</em>.</li>
+        <li><strong>Etapa 3:</strong> Cace <em>Shogoth</em> no Abismo do Mar até obter a <em>Alma Manipulada</em>. Entregue a Celina.</li>
+        <li><strong>Etapa 4 (O Confronto):</strong> Derrote o Boss <strong>Yagditha</strong> no Abismo do Mar. O uso de pergaminhos de invocação é permitido, desde que dentro do mapa. Reporte a Celina.</li>
+        <li><strong>Etapa 5 (Finalização):</strong> Entregue o <em>Documento Ultra Secreto</em> ao <strong>Comandante Derik (Ricarten)</strong>.</li>
+    </ul>
+
+    <div style="margin-top: 15px; padding: 10px; background-color: #decfa8; border: 1px solid #8a683e; border-radius: 4px;">
+        <p style="font-weight: bold; color: #694318;">Resumo de Recompensas:</p>
+        <ul style="list-style-type: disc; margin-left: 20px; font-size: 0.9rem; font-weight: 600;">
+            <li>Experiência massiva (330 bilhões de XP).</li>
+            <li>+5 Pontos de Status.</li>
+            <li>+3 Pontos de Habilidade Especial (EP).</li>
+        </ul>
+    </div>
+</div>
+
+
+<div class="missao-item guia-box" data-level="155" style="display: none; margin-bottom: 15px;">
+    <h3>🔥 Quest de Nível 155 - O Ritual do Fogo</h3>
+    <p><em>Requisito: Nível 155.</em></p>
+
+    <p>Uma série de desafios extremos que exige o domínio de áreas de gelo e fogo. Inicie conversando com a <strong>Sábia Celina (Pillai)</strong> e, em seguida, com a <strong>Sacerdotisa Rubi (Pillai)</strong>.</p>
+
+    <h4 style="margin-top: 15px; color: #8c5827;">📍 Etapas 1 e 2: O Despertar da Esfera</h4>
+    <ul style="list-style-type: square; margin-left: 20px;">
+        <li><strong>Etapa 1:</strong> Elimine 150 monstros no <strong>Vale Gallubia</strong> e invoque a <em>Esfera do Fogo</em> na coordenada E8 do Vale Snowstom.</li>
+        <li><strong>Etapa 2:</strong> Elimine 100 monstros no <strong>Abismo do Mar Congelado</strong> e invoque a <em>Esfera do Fogo</em> no local indicado.</li>
+    </ul>
+
+    <h4 style="margin-top: 15px; color: #8c5827;">📍 Etapa 3 e 4: O Ovo de Kelvezu e o Dragão</h4>
+    <ul style="list-style-type: square; margin-left: 20px;">
+        <li><strong>Etapa 3:</strong> Ative a <em>Incubadora</em> ao lado do local de spawn do Boss <strong>Kelvezu</strong> e derrote-o. Reporte ao <strong>Comandante Derik (Ricarten)</strong>.</li>
+        <li><strong>Etapa 4:</strong> Ative o <em>Ovo de Kelvezu</em> no <strong>Abismo do Mar Congelado</strong> e derrote o <strong>Dragão de Snowstom</strong>.</li>
+    </ul>
+
+    <h4 style="margin-top: 15px; color: #8c5827;">📍 Etapas 6 e 7: A Dama da Neve e Finalização</h4>
+    <ul style="list-style-type: square; margin-left: 20px;">
+        <li><strong>Etapa 6:</strong> Ative a <em>Quintessência</em> no <strong>Vale Snowstom (D10)</strong> e derrote a <strong>Dama da Neve</strong>.</li>
+        <li><strong>Etapa 7:</strong> Entregue o relatório final ao <strong>Comandante Derik</strong>.</li>
+    </ul>
+
+    <div style="margin-top: 15px; padding: 15px; background-color: #decfa8; border: 1px dashed #b52a2a; border-radius: 4px;">
+        <p style="color: #b52a2a; font-weight: bold; margin-bottom: 5px;">⚠️ Protocolos de Sobrevivência (Crítico):</p>
+        <ul style="list-style-type: disc; margin-left: 20px; font-size: 0.9rem; font-weight: 600;">
+            <li><strong>Sem Tolerância:</strong> Nas etapas finais (Dragão de Snowstom e Dama da Neve), o progresso será resetado caso você morra ou deslogue.</li>
+            <li><strong>Combate:</strong> Prepare-se para Bosses de alto nível. O uso de pergaminhos de invocação é permitido, desde que dentro do mapa de destino.</li>
+        </ul>
+    </div>
+
+    <p style="margin-top: 15px;"><strong>Recompensa Total:</strong> Quantidade massiva de experiência (mais de 1.8 trilhão de XP acumulado) e o cobiçado <strong>Roitra Superior</strong>.</p>
+</div>
+
+
+
+<div class="missao-item guia-box" data-level="165" style="display: none; margin-bottom: 15px;">
+    <h3>💀 Quest de Nível 165 - O Santuário do Abismo</h3>
+    <p><em>Requisito: Nível 165.</em></p>
+
+    <p>Esta missão exige exploração ativa, pois os locais de investigação no mapa <strong>Santuário do Abismo</strong> são gerados aleatoriamente para cada jogador.</p>
+
+    <h4 style="margin-top: 15px; color: #8c5827;">📍 Roteiro da Investigação:</h4>
+    <ul style="list-style-type: square; margin-left: 20px; margin-top: 5px;">
+        <li><strong>Início:</strong> Fale com o <strong>Comandante Derik (Ricarten)</strong>. Explore o Santuário do Abismo até localizar o ponto de investigação aleatório. Reporte a <strong>Sábia Celina (Pillai)</strong>.</li>
+        <li><strong>Etapa 1:</strong> Cace o <em>Faugn Insano</em> para obter o <em>Tentáculo de Faugn</em>. Entregue a Celina.</li>
+        <li><strong>Etapa 2:</strong> Cace o <em>Crios Insano</em> para obter 3 <em>Lâminas Afiadas</em>. Entregue a Celina.</li>
+        <li><strong>Etapa 3:</strong> Leve a <em>Lâmina Purificada</em> à <strong>Artesã Salon (Ricarten)</strong>. Após o processamento, retorne o <em>Incensário Mágico</em> para Celina.</li>
+        <li><strong>Etapa 4:</strong> Cace 30 <em>Bruxas Insanas</em> no Santuário do Abismo e reporte a Celina.</li>
+        <li><strong>Etapa 6 (Confronto):</strong> Derrote o Boss <strong>Midranda Ressurgido</strong> no Santuário do Abismo.</li>
+        <li><strong>Etapa 7 (Finalização):</strong> Entregue o <em>Documento Ultra Secreto</em> ao <strong>Comandante Derik</strong>.</li>
+    </ul>
+
+    <div style="margin-top: 15px; padding: 10px; background-color: #decfa8; border: 1px solid #8a683e; border-radius: 4px;">
+        <p style="font-weight: bold; color: #694318;">Recompensa Final (Aumento Permanente):</p>
+        <p>A partir do nível 165, seu ganho de atributos será otimizado para <strong>12 pontos de status a cada level up</strong>.</p>
+    </div>
+</div>
+
+
+<div class="missao-item guia-box" data-level="172" style="display: none; margin-bottom: 15px;">
+    <h3>🔥 Quest de Nível 172 - Mistérios do Coração de Fogo</h3>
+    <p><em>Requisito: Nível 172.</em></p>
+
+    <p>Uma missão de exploração em terreno hostil. O ponto de investigação no mapa <strong>Coração de Fogo</strong> é aleatório para cada jogador; explore o local até encontrar a marca necessária.</p>
+
+    <h4 style="margin-top: 15px; color: #8c5827;">📍 Roteiro de Expedição:</h4>
+    <ul style="list-style-type: square; margin-left: 20px; margin-top: 5px;">
+        <li><strong>Início:</strong> Fale com a <strong>Sábia Celina (Pillai)</strong> e localize o ponto de investigação no mapa Coração de Fogo. Retorne a Celina.</li>
+        <li><strong>Etapa 1:</strong> Colete 5 <em>Fragmentos de Fogo</em> caçando os monstros <em>Igniculus, Guardião de Lava ou Arqueiro de Lava</em>. Entregue a Celina.</li>
+        <li><strong>Etapa 2:</strong> Elimine 100 monstros em qualquer local do mapa Coração de Fogo. Reporte a Celina e fale com ela mais 3 vezes para validar a progressão.</li>
+        <li><strong>Etapa 3 (Confronto Final):</strong> Derrote o Boss <strong>Dama Flamejante</strong> no mapa Coração de Fogo. Após o abate, reporte a Celina e interaja com ela mais 3 vezes para concluir.</li>
+    </ul>
+
+    <div style="margin-top: 15px; padding: 10px; background-color: #decfa8; border: 1px solid #8a683e; border-radius: 4px;">
+        <p style="font-weight: bold; color: #694318;">Resumo de Recompensas:</p>
+        <ul style="list-style-type: disc; margin-left: 20px; font-size: 0.9rem; font-weight: 600;">
+            <li>+15 Pontos de Status permanentes.</li>
+            <li>+3 Pontos de Habilidade Especial (EP).</li>
+        </ul>
+    </div>
+</div>
+
+
+
+
+                    </div>
+    </div>
+</section>
+
+
+
+
+
+
+
+<section id="downloads" class="tab-content">
+    <div class="card">
+        <h2>DOWNLOADS ÚTEIS</h2>
+        <p>Ferramentas essenciais para rodar o Priston Tale com o melhor desempenho.</p>
+
+        <div class="download-grid">
+            <div class="download-card">
+                <div class="download-img">
+                    <img src="images/directx-thumb.png" alt="DirectX Runtime">
+                </div>
+                <div class="download-info">
+                    <h3>DirectX Runtime</h3>
+                    <p>Essencial para corrigir erros de DLL e melhorar a compatibilidade gráfica.</p>
+                    <a href="https://www.microsoft.com/pt-br/download/details.aspx?id=35" target="_blank" class="download-link">
+                        <i class="fas fa-external-link-alt"></i> CLIQUE AQUI
+                    </a>
+                </div>
+            </div>
+
+
+            <div class="download-card">
+                <div class="download-img">
+                    <img src="images/7zip.png" alt="7-ZIP">
+                </div>
+                <div class="download-info">
+                    <h3>7-ZIP</h3>
+                    <p>Ferramenta para compactar e descompactar arquivos.</p>
+                    <a href="https://www.7-zip.org/download.html" target="_blank" class="download-link">
+                        <i class="fas fa-external-link-alt"></i> CLIQUE AQUI
+                    </a>
+                </div>
+            </div>
+
+            <div class="download-card">
+                <div class="download-img">
+                    <img src="images/visual-cpp.png" alt="Visual C++">
+                </div>
+                <div class="download-info">
+                    <h3>Visual C++ Redist</h3>
+                    <p>Pacotes necessários para evitar erros de inicialização do jogo.</p>
+                    <a href="https://learn.microsoft.com/en-US/cpp/windows/latest-supported-vc-redist?view=msvc-170" target="_blank" class="download-link">
+                        <i class="fas fa-external-link-alt"></i> CLIQUE AQUI
+                    </a>
+                </div>
+            </div>
+
+<div class="download-card">
+    <div class="download-img">
+        <img src="images/dotnet-thumb.png" alt=".NET Framework">
+    </div>
+    <div class="download-info">
+        <h3>.NET Framework</h3>
+        <p>Necessário para o funcionamento correto do Launcher e aplicativos de suporte do servidor.</p>
+        <a href="https://dotnet.microsoft.com/en-us/download/dotnet-framework" target="_blank" class="download-link">
+            <i class="fas fa-external-link-alt"></i> CLIQUE AQUI
+        </a>
+    </div>
+</div>
+
+            <div class="download-card">
+                <div class="download-img">
+                    <img src="images/ddu.png" alt="Display Driver Uninstaller (DDU)">
+                </div>
+                <div class="download-info">
+                    <h3>Display Driver Uninstaller (DDU)</h3>
+                    <p>Ferramenta para desinstalar os drivers de vídeo de forma limpa e instalar novamente com o software oficial.</p>
+                    <a href="https://www.wagnardsoft.com/display-driver-uninstaller-ddu" target="_blank" class="download-link">
+                        <i class="fas fa-external-link-alt"></i> CLIQUE AQUI
+                    </a>
+                </div>
+            </div>
+
+<div class="download-card">
+                <div class="download-img">
+                    <img src="images/ccleaner.png" alt="CCleaner">
+                </div>
+                <div class="download-info">
+                    <h3>CCleaner</h3>
+                    <p>Otimize seu sistema removendo arquivos inúteis, limpando o registro e melhorando a performance do seu computador.</p>
+                    <a href="https://www.ccleaner.com/pt-br/ccleaner/download" target="_blank" class="download-link">
+                        <i class="fas fa-external-link-alt"></i> CLIQUE AQUI
+                    </a>
+                </div>
+            </div>
+
+
+            <div class="download-card">
+                <div class="download-img">
+                    <img src="images/packetloss.png" alt="Packet Loss Test">
+                </div>
+                <div class="download-info">
+                    <h3>Packet Loss Test</h3>
+                    <p>Ferramenta essencial para diagnosticar a estabilidade da sua conexão (perda de pacotes) antes de iniciar disputas no Priston Tale.</p>
+                    <a href="https://pt.packetlosstest.com/" target="_blank" class="download-link">
+                        <i class="fas fa-external-link-alt"></i> ACESSAR SITE
+                    </a>
+                </div>
+            </div>
+
+
+            <div class="download-card">
+                <div class="download-img">
+                    <img src="images/anydesk.png" alt="Packet Loss Test">
+                </div>
+                <div class="download-info">
+                    <h3>Packet Loss Test</h3>
+                    <p>Ferramenta para conexão remota, facilitar suporte.</p>
+                    <a href="https://anydesk.com/pt/downloads/thank-you?dv=win_exe" target="_blank" class="download-link">
+                        <i class="fas fa-external-link-alt"></i> ACESSAR SITE
+                    </a>
+                </div>
+            </div>
+
+            <div class="download-card">
+                <div class="download-img">
+                    <img src="images/discord-thumb.png" alt="Discord">
+                </div>
+                <div class="download-info">
+                    <h3>Discord Desktop</h3>
+                    <p>Versão de desktop para acesso aos recursos de voz nas Raids.</p>
+                    <a href="https://discord.com/download" target="_blank" class="download-link">
+                        <i class="fas fa-external-link-alt"></i> CLIQUE AQUI
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+        <section id="aging" class="tab-content">
+            <div class="card">
+                <h2>Simulador de Aging Militar - RevoltadoS</h2>
+                <p>Simule a evolução real dos seus equipamentos e os Sheltons necessários para forja no Dinas PT.</p>
+                
+                <div class="aging-form" style="margin-top: 20px;">
+                    <div class="input-group">
+                        <label for="tipo-item">Categoria do Equipamento:</label>
+                        <select id="tipo-item" onchange="popularItensEspecificos()" style="width: 100%; padding: 10px; background-color: #f1ebd9; border: 1px solid #bfae8f; font-weight: 600;">
+    <option value="arma" selected>⚔️ Armas</option>
+    <option value="armadura">🛡️ Armadura</option>
+    <option value="escudo">🛡️ Escudo</option>
+    <option value="bracete">🧤 Braceletes</option>
+    <option value="luvas">🥊 Luvas</option>
+    <option value="botas">👢 Botas</option>
+</select>
+                    </div>
+
+                    <div class="input-group" style="margin-top: 15px;">
+                        <label for="especifico-item">Selecione o Item do Meta:</label>
+                        <select id="especifico-item" onchange="atualizarStatusBasePorItem()" style="width: 100%; padding: 10px; background-color: #f1ebd9; border: 1px solid #bfae8f; font-weight: 600;">
+                            </select>
+                    </div>
+
+                    <div id="container-inputs-arma" style="margin-top: 15px;">
+                        <div style="display: flex; gap: 15px; margin-bottom: 15px;">
+                            <div style="flex: 1;">
+                                <label for="dano-min-input">Dano Mínimo Atual:</label>
+                                <input type="number" id="dano-min-input" value="31" min="1" style="width: 100%; padding: 10px; background-color: #fff; border: 1px solid #bfae8f; font-weight: 600;">
+                            </div>
+                            <div style="flex: 1;">
+                                <label for="dano-max-input">Dano Máximo Atual:</label>
+                                <input type="number" id="dano-max-input" value="66" min="1" style="width: 100%; padding: 10px; background-color: #fff; border: 1px solid #bfae8f; font-weight: 600;">
+                            </div>
+                        </div>
+                        <div class="input-group">
+                            <label for="taxa-ataque-input">Taxa de Ataque (AR) Atual:</label>
+                            <input type="number" id="taxa-ataque-input" value="169" min="1" style="width: 100%; padding: 10px; background-color: #fff; border: 1px solid #bfae8f; font-weight: 600;">
+                        </div>
+                    </div>
+<div class="input-group" id="container-bloqueio" style="display:none; margin-top:15px;">
+    <label id="label-bloqueio" for="bloqueio-input">
+        🛡️ Bloqueio Atual:
+    </label>
+
+    <input
+        type="number"
+        id="bloqueio-input"
+        min="0"
+        step="0.1"
+        style="
+            width:100%;
+            padding:10px;
+            background-color:#fff;
+            border:1px solid #bfae8f;
+            font-weight:600;
+        "
+    >
+</div>
+                    <div id="container-input-defesa" style="display: none;">
+                        <div style="display: flex; gap: 15px;">
+                            <div class="input-group" style="flex: 1;">
+                                <label for="defesa-input">🛡️ Taxa de Defesa Atual:</label>
+                                <input type="number" id="defesa-input" value="0" style="width: 100%; padding: 10px; background-color: #fff; border: 1px solid #bfae8f; font-weight: 600;">
+                            </div>
+                            <div class="input-group" style="flex: 1;">
+                                <label id="label-status-secundario" for="taxa-ataque-defesa-input">
+🎯 Taxa de Ataque Atual:
+</label>
+                                <input type="number" id="taxa-ataque-defesa-input" step="0.1" value="0.0" style="width: 100%; padding: 10px; background-color: #fff; border: 1px solid #bfae8f; font-weight: 600;">
+                            </div>
+
+                        </div>
+                    </div>
+                    
+                    <div class="input-group" style="margin-top: 15px;">
+                        <label for="nivel-aging">Nível de Aging Desejado:</label>
+                        <select id="nivel-aging" style="width: 100%; padding: 10px; background-color: #f1ebd9; border: 1px solid #bfae8f; font-weight: 600;">
+                            <option value="1"selected>+1 (Seguro)</option>
+                            <option value="2">+2 (Seguro)</option>
+                            <option value="3">+3 (Seguro)</option>
+                            <option value="4">+4 (Seguro)</option>
+                            <option value="5">+5 (Seguro)</option>
+                            <option value="6">+6 (Seguro)</option>
+                            <option value="7">+7 (Seguro)</option>
+                            <option value="8">+8 (Risco de Voltar)</option>
+                            <option value="9">+9 (Risco de Voltar)</option>
+                            <option value="10">+10 (Risco de Voltar)</option>
+                            <option value="11">+11 (Risco de Voltar)</option>
+                            <option value="12">+12 (Meta Intermediário)</option>
+                            <option value="13">+13 (Risco de Quebra)</option>
+                            <option value="14">+14 (Risco de Quebra)</option>
+                            <option value="15">+15 (High-End)</option>
+                            <option value="16">+16 (Risco Crítico)</option>
+                            <option value="17">+17 (Risco Crítico)</option>
+                            <option value="18">+18 (Lendário)</option>
+                            <option value="19">+19 (Supremo)</option>
+                            <option value="20">+20 (Deus do PT)</option>
+                            <option value="21">+21 (Celestial)</option>
+                            <option value="22">+22 (Eterno)</option>
+                            <option value="23">+23 (Mítico)</option>
+                            <option value="24">+24 (Infinito)</option>
+                            <option value="25">+25 (Absoluto)</option>
+                        </select>
+                    </div>
+
+                    <button class="action-btn" onclick="processarAgingNativo()" style="margin-top: 20px;">Calcular Progressão Nativa</button>
+                </div>
+
+                <div id="resultado-aging" class="resultado-box" style="display: none; margin-top: 25px; border-top: 3px solid #8a683e; padding-top: 20px;">
+                    <h3>📊 Laudo Estatístico da Forja:</h3>
+                    <div style="background-color: #dccbaa; padding: 15px; border: 1px solid #bfae8f; margin-top: 10px; font-weight: 600; line-height: 1.6rem; color: #4a2f11;">
+                        <p>🔥 <span id="res-tipo-label">Laudo Técnico de Atributos:</span></p>
+                        <div id="res-status-final" style="margin: 10px 0;"></div>
+                        <p>📈 Status do Saldo: <span style="color: #2c662d;" id="res-ganho-liquido">-</span></p>
+                        <hr style="border: 0; border-top: 1px solid #bfae8f; margin: 10px 0;">
+                        <p>💎 <strong>Sheltons Necessários:</strong> <span style="color: #4a2f11;" id="res-sheltons-receita">Nenhum</span></p>
+                        <p>💰 Custo da Taxa (Gold): <span style="color: #8c5827;" id="res-gold-taxa">0 Gold</span></p>
+                        <p id="res-seguranca-status">🛡️ Segurança: <span id="res-seguranca-texto" style="color: #2c662d;">-</span></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+<iframe 
+    width="100%" 
+    height="166" 
+    scrolling="no" 
+    frameborder="no" 
+    allow="autoplay; encrypted-media" 
+    src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/263386208&color=%23d19f45&auto_play=true&hide_related=true&show_comments=false&show_user=false&show_reposts=false&show_teaser=false&show_artwork=true">
+</iframe>
+        <p>&copy; 2026 Clã RevoltadoS - Desenvolvido para a comunidade de Priston Tale.</p>
+    </footer>
+
+    <script src="script.js"></script>
+<div id="modal-foto" style="display:none; position:fixed; z-index:999; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.9); justify-content:center; align-items:center;">
+    <span onclick="document.getElementById('modal-foto').style.display='none'" style="position:absolute; top:20px; right:40px; color:white; font-size:40px; cursor:pointer;">&times;</span>
+    <img id="img-modal" style="max-width:80%; max-height:80%; border: 3px solid #d19f45;">
+</div>
+</body>
+</html>
